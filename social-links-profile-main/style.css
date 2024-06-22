@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body{
+    font-family: "Inter", sans-serif;
+    background-color: hsl(0, 0%, 8%); 
+    color: #fff;
+    font-size: 14px;
+    padding-top: 215px;
+}
+
+body p1{
+    color: hsl(75, 94%, 57%);
+}
+
+body p2{
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+}
+
+body h1{
+    font-size: 20px; 
+    line-height: 3.9px;
+}
+
+img{
+    border-radius: 100px; 
+    width: 70px;
+    align-items: center;
+}
+
+img{
+    margin: 10% auto;
+}
+
+.corpo{
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 7px; 
+    height: 500px;
+    width: 320px;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.btn-contato button{
+    align-items: center;
+    width: 280px;
+    height: 35px;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+}
+
+.btn-contato button{
+    padding: 12px 95px; 
+    font-size: 14px; 
+    border-radius: 6px; 
+    background-color: hsl(0, 0%, 20%); 
+    color: hsl(0, 0%, 100%);
+    border: 0;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn-contato button:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: #000;
+    transition: .2s;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+}
+
+.btn-contato button{
+    margin-top: 10px;
+}
+
+.btn-contato a button{
+    text-align: center;
+    padding: 8px;
+}
