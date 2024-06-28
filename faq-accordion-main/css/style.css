@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --lightpink: hsl(275, 100%, 97%);
+  --grayishpurple: hsl(292, 16%, 49%);
+  --darkpurple: hsl(292, 42%, 14%);
+
+  --fonte: "Work Sans", sans-serif;
+}
+
+body {
+  font-family: var(--fonte);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: url(../assets/images/background-pattern-desktop.svg)
+    var(--lightpink) no-repeat;
+}
+
+.container {
+  width: calc(100% - 3rem);
+  max-width: 520px;
+  background-color: var(--white);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.faq {
+  border: 1px solid var(--lightpink);
+}
+
+.faq:last-of-type {
+  border-bottom: 0;
+}
+
+.h1-div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.h1-div img {
+  width: 1.5rem;
+}
+
+.h1-div h1 {
+  color: var(--darkpurple);
+}
+
+.pergunta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+
+.pergunta h4 {
+  font-weight: 600;
+  color: var(--darkpurple);
+  cursor: pointer;
+}
+
+.pergunta h4:hover {
+  color: var(--grayishpurple);
+}
+
+.resposta {
+  display: none;
+  font-size: 0.9rem;
+  color: var(--grayishpurple);
+  padding-bottom: 1rem;
+}
+
+.resposta.ativa {
+  display: block;
+}
+
+@media (min-width: 960px) {
+  body {
+    background: url(../assets/images/background-pattern-desktop.svg)
+      var(--lightpink) repeat-x;
+    background-position: 0 -4rem;
+  }
+  .container {
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(47, 21, 51, 0.2);
+  }
+  .h1-div {
+    padding-bottom: 1rem;
+  }
+  .h1-div h1 {
+    font-size: 3rem;
+  }
+  .h1-div img {
+    width: auto;
+  }
+}
