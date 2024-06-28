@@ -32,12 +32,9 @@ body {
   border-radius: 10px;
 }
 
-.faq {
-  border: 1px solid var(--lightpink);
-}
-
-.faq:last-of-type {
-  border-bottom: 0;
+hr {
+  opacity: 15%;
+  color: var(--darkpurple);
 }
 
 .h1-div {
