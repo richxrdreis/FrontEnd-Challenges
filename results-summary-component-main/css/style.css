@@ -2,7 +2,7 @@
 
 :root {
   /* ### Primary */
-  --light-red: hsl(0, 100%, 67%);
+  --light-red: #ff5757;
   --orangey-yellow: hsl(39, 100%, 56%);
   --green-teal: hsl(166, 100%, 37%);
   --cobalt-blue: hsl(234, 85%, 45%);
@@ -20,7 +20,7 @@
   --white: hsl(0, 0%, 100%);
   --pale-blue: hsl(221, 100%, 96%);
   --light-lavender: hsl(241, 100%, 89%);
-  --dark-gray-blue: hsl(224, 30%, 27%);
+  --dark-gray-blue: #303b5a;
 
   /* ##fonte */
   --fonte: "Hanken Grotesk", sans-serif;
@@ -86,16 +86,96 @@ body {
 
 @media (min-width: 600px) {
   .result-summary {
+    margin-inline: 1rem;
     grid-template-columns: 1fr 1fr;
     border-radius: var(--border-radius);
     overflow: hidden;
-    box-shadow: 0.5rem 1rem 3rem var(--dark-gray-blue);
+    box-shadow: 0.5rem 1rem 3rem #303b5a4f;
   }
+}
+
+.results,
+.summary {
+  padding: var(--padding);
 }
 
 .results {
   color: #ffffffa8;
   text-align: center;
   background: var(--violet-blue);
-  border-radius: var(--border-radius);
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+@media (min-width: 600px) {
+  .results {
+    border-radius: var(--border-radius);
+  }
+}
+
+.flex-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.grid-flow {
+  display: grid;
+  align-content: start;
+  gap: 1rem;
+}
+
+.grid-flow[data-spacing="large"] {
+  gap: 2rem;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.result-score {
+  display: grid;
+  place-content: center;
+  width: 12rem;
+  margin-inline: auto;
+  background: var(--light-royal-blue);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+
+.result-score span {
+  display: block;
+  font-size: 5rem;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--white);
+}
+
+.result-rank {
+  color: var(--white);
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 87, 87, 0.13);
+}
+
+.summary-item svg {
+  stroke: red;
+}
+
+.summary-item-title {
+  color: rgba(255, 87, 87, 0.76);
+  font-weight: bold;
+}
+
+.summary-item[data-item-type="accent-1"] {
+  background-color: rgba(255, 87, 87, 0.13);
 }
