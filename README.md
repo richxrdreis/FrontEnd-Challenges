@@ -5,5 +5,4 @@ Aqui abaixo estão listados alguns dos desafios que já concluí ou que estão e
 
 ![image](https://github.com/richxrdreis/FrontEnd-Challenges/assets/167144386/32d87c7d-21c4-42f4-a94e-7785cb8500d2)
 ![image](https://github.com/richxrdreis/FrontEnd-Challenges/assets/167144386/b5c0a654-7f55-4606-9bb2-19ff4361c2f2)
-![image](https://github.com/richxrdreis/FrontEnd-Challenges/assets/167144386/32e82e1b-542d-42ac-a5ce-c6b6aab925bd)
 ![image](https://github.com/richxrdreis/FrontEnd-Challenges/assets/167144386/0911e432-a31d-47bf-8f78-1a1526188ba1)
