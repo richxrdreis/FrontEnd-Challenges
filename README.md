@@ -1,9 +1,7 @@
-Olá, aqui você encontrará alguns ou todos os desafios do site FrontEnd - Mentor
+## Olá, aqui você encontrará alguns ou todos os desafios do site FrontEnd - Mentor
 
-Basicamente, estou aprendendo a programar recentemente e resolvi mostrar minha evolução em forma de desafios,
-cada desafio que eu resolver, quem sabe sejam todos, serão postados aqui.
-
-Acompanhe comigo!!
+## Acompanhe comigo toda a minha evolução como um programador, do Newbie ao Guru.
+## Aqui abaixo estão listados alguns dos desafios que já concluí ou que estão em processo de conclusão!
 
 ![image](https://github.com/richxrdreis/FrontEnd-Challenges/assets/167144386/6ff35b63-e5ff-4b53-9943-f24ea24e0178)
 ![image](https://github.com/richxrdreis/FrontEnd-Challenges/assets/167144386/ede147d3-3cb1-4474-9e6f-6b4c1b691da5)
