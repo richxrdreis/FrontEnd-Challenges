@@ -1,6 +1,6 @@
 ## Aqui estão as minhas soluções dos desafios do FrontEnd - Mentor.
 
-Acompanhe comigo toda a minha evolução como um programador, do Newbie ao Guru.
+Acompanhe comigo toda a minha evolução como um programador, do *Newbie ao Guru.*
 Aqui abaixo estão listados alguns dos desafios que já concluí ou que estão em processo de conclusão!
 
 ![image](https://github.com/richxrdreis/FrontEnd-Challenges/assets/167144386/6ff35b63-e5ff-4b53-9943-f24ea24e0178)
