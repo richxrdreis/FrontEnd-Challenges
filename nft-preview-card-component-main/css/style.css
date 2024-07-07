@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  /* ### Primary-colors */
+
+  --soft-blue: #8bacda;
+  --cyan: #00fff7;
+
+  /* ### Neutral-colors */
+
+  --very-dark-blue-main-BG: #0d192b;
+  --very-dark-blue-card-BG: #14253d;
+  --very-dark-blue-line: #2f415b;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--very-dark-blue-main-BG);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: var(--very-dark-blue-card-BG);
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  border-radius: 16px;
+  padding: 0 25px;
+}
+
+.image {
+  padding: 22px 0;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 9px;
+}
+
+h3 {
+  margin-bottom: 22px;
+  color: var(--white);
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.45rem;
+  color: var(--soft-blue);
+  font-weight: 300;
+  margin-bottom: 32px;
+}
+
+.preco-dias {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.preco {
+  color: var(--cyan);
+  font-weight: 550;
+  display: flex;
+  align-items: center;
+}
+
+.preco img {
+  padding-right: 6px;
+}
+
+.dias {
+  color: var(--soft-blue);
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+}
+
+.dias img {
+  padding-right: 6px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: var(--soft-blue);
+  margin-bottom: 12px;
+}
+
+.criador {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  color: var(--soft-blue);
+}
+
+.criador img {
+  width: 30px;
+}
+
+span {
+  color: var(--white);
+}
+
+span:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
