@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-inter: "Inter", sans-serif;
+  --font-lexend: "Lexend Deca", sans-serif;
+
+  --very-dark-blue-main-background: hsl(233, 47%, 7%);
+  --dark-desaturated-blue-card-background: hsl(244, 38%, 16%);
+  --soft-violet-accent: #aa5cdb;
+
+  --white-main-heading-stats-: hsl(0, 0%, 100%);
+  --slightly-transparent-white-main-paragraph: hsla(0, 0%, 100%, 0.75);
+  --lightly-transparent-white-stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+body,
+html {
+  height: 100vh;
+}
+
+body {
+  background-color: var(--very-dark-blue-main-background);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 568px;
+  height: 447px;
+  background-color: var(--dark-desaturated-blue-card-background);
+  display: flex;
+  padding: 69px;
+  flex-direction: column;
+  border-radius: 7px 0px 0px 7px;
+}
+
+.card h1 {
+  margin-bottom: 33px;
+  font-family: var(--font-inter);
+}
+
+.card span {
+  color: var(--soft-violet-accent);
+}
+
+.card p {
+  color: var(--slightly-transparent-white-main-paragraph);
+  font-family: var(--font-inter);
+  line-height: 1.5rem;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  margin-bottom: 70px;
+}
+
+.baixo {
+  font-family: var(--font-lexend);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.baixo .caixa {
+  width: 2000px;
+  margin: 10px 0px;
+}
+
+.baixo .caixa h4,
+h3 {
+  font-weight: normal;
+}
+
+.caixa h3 {
+  font-weight: 600;
+  font-size: 23px;
+}
+
+.caixa h4 {
+  margin-top: 8px;
+  text-transform: uppercase;
+  color: var(--lightly-transparent-white-stat-headings);
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.right {
+  display: flex;
+  justify-content: end;
+  flex-direction: row;
+  width: 539px;
+  border-radius: 0px 7px 7px 0px;
+  background-image: url(../images/image-header-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.right::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--soft-violet-accent);
+  position: absolute;
+  top: 0;
+  left: 0;
+  mix-blend-mode: multiply;
+}
