@@ -22,6 +22,31 @@ html {
   height: 100%;
 }
 
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.img1,
+.img2 {
+  position: absolute;
+  z-index: 0;
+}
+
+.img1 {
+  top: -50%;
+  left: -20%;
+}
+
+.img2 {
+  bottom: -50%;
+  right: -20%;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -38,6 +63,7 @@ body {
   width: 350px;
   height: 375px;
   border-radius: 12px;
+  z-index: 1;
 }
 
 .contain {
@@ -126,7 +152,57 @@ body {
   font-weight: 700;
 }
 
-.img1,
-.img2 {
-  display: none;
+@media (max-width: 768px) {
+  .container {
+    width: 300px;
+    height: auto;
+    z-index: 0;
+  }
+
+  .img1,
+  .img2 {
+    width: 100%;
+    z-index: 0;
+  }
+
+  .img1 {
+    top: -30%;
+    left: -30%;
+  }
+
+  .img2 {
+    bottom: -30%;
+    right: -30%;
+  }
+
+  .profile h3 {
+    margin-top: 85px;
+    font-size: 16px;
+    font-weight: 800;
+  }
+
+  .profile span {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 14px;
+  }
+
+  .profile p {
+    font-size: 12px;
+  }
+
+  .seguidores {
+    gap: 45px;
+  }
+
+  .seguidores h4 {
+    font-weight: 800;
+    font-size: 16px;
+  }
+
+  .seguidores p {
+    font-size: 8px;
+    margin-bottom: 10px;
+  }
 }
