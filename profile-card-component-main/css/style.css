@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+}
+
+/* 400 e 700 de weights */
+
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: #969696;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-cyan);
+}
+
+.container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 350px;
+  height: 375px;
+  border-radius: 12px;
+}
+
+.contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.contain .top-img {
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+}
+
+.contain .perfil {
+  position: absolute;
+  border-radius: 50%;
+  border: 4px solid white;
+  top: 25%;
+}
+
+.profile h3 {
+  color: var(--very-dark-desaturated-blue);
+  margin-top: 70px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile span {
+  color: var(--dark-grayish-blue);
+  font-weight: 400;
+  padding-left: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--dark-grayish-blue);
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 9px;
+  margin-bottom: 27px;
+}
+
+.seguidores {
+  border-top: 1px solid rgb(150, 150, 150, 0.3);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding-top: 20px;
+  color: var(--very-dark-desaturated-blue);
+  font-weight: normal;
+}
+
+.seguidores div {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+}
+
+.seguidores p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: var(--dark-grayish-blue);
+  margin-top: 6px;
+}
+
+.seguidores h4 {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-weight: 700;
+}
+
+.img1,
+.img2 {
+  display: none;
+}
