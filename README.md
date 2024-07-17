@@ -5,8 +5,8 @@ Aqui abaixo estão listados alguns dos desafios que já concluí ou que estão e
 
 ## CONTEÚDOS:
 
-- [Overview](#NEWBIE)
-- [Overview](#JUNIOR) 
+- [Level Newbie](#NEWBIE)
+- [Level Junior](#JUNIOR) 
 
 ## NEWBIE
 
