@@ -5,10 +5,13 @@ Aqui abaixo estão listados alguns dos desafios que já concluí ou que estão e
 
 ## CONTEÚDOS:
 
-- [Level Newbie](#NEWBIE)
-- [Level Junior](#JUNIOR) 
+- [Newbie](#NEWBIE)
+- [Junior](#JUNIOR)
+- [Intermediate](#INTERMEDIATE)
+- [Advanced](#ADVANCED)
+- [Guru](#GURU)  
 
-## NEWBIE
+## [LEVEL 0] - NEWBIE
 
 ![image](https://github.com/richxrdreis/FrontEnd-Challenges/assets/167144386/481719ea-a3f1-4ccb-a8c8-5c2507982327)
 ![image](https://github.com/richxrdreis/FrontEnd-Challenges/assets/167144386/32d87c7d-21c4-42f4-a94e-7785cb8500d2)
