@@ -152,13 +152,25 @@ main p {
 
   .container .card img {
     width: 323px;
-    height: 280px;
+    height: 230px;
     border-radius: 9px 9px 0px 0px;
+    margin-bottom: 25px;
   }
 
-  .card {
-    margin-top: 18px;
-    margin-left: 27px;
-    width: 350px;
+  main {
+    padding: 0 20px;
+  }
+
+  main h1 {
+    font-size: 18px;
+    max-width: 100%;
+  }
+
+  .profile {
+    margin-bottom: 40px;
+  }
+
+  .profile .img-foto {
+    width: 30px;
   }
 }
