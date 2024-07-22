@@ -3,33 +3,115 @@
 * {
   margin: 0;
   padding: 0;
+
   box-sizing: border-box;
+  border: none;
+  outline: none;
+
   font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
 }
 
 :root {
-  --desaturated-red: hsl(0, 36%, 70%);
-  --soft-red: hsl(0, 93%, 68%);
-  --dark-grayish-red: hsl(0, 6%, 24%);
-  --gradient-1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
-  --gradient-2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  --desaturated-red: #ce9797;
+  --soft-red: #f96262;
+  --dark-grayish-red: #413a3a;
+  --gradient-1: linear-gradient(135deg, #ffffff, #fff5f5);
+  --gradient-2: linear-gradient(135deg, #f8bfbf, #ee8c8c);
 }
+
+/* - Weights: 300, 400, 600 */
 
 body {
-  height: 100vh;
   display: flex;
-  align-items: center;
-  background-color: var(--gradient-1);
+  height: 100vh;
+  background: var(--gradient-1);
 }
 
-main {
-  padding: 66px 159px;
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 163px;
+  width: 60%;
+  background: url(../images/bg-pattern-desktop.svg) no-repeat center center;
+  background-size: cover;
+}
+
+.image-container {
+  width: 40%;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
 }
 
 header {
-  margin-top: 66px;
+  margin-bottom: 134px;
 }
 
-.img img {
-  width: 30%;
+.main span {
+  color: var(--desaturated-red);
+  font-weight: 300;
+  font-size: 70px;
+  letter-spacing: 16px;
+  width: 268px;
+  height: 53px;
+}
+
+.main h1 {
+  letter-spacing: 16px;
+  font-size: 70px;
+
+  font-weight: 600;
+
+  width: 370px;
+  height: 130px;
+
+  color: var(--dark-grayish-red);
+  margin-bottom: 120px;
+}
+
+.main p {
+  width: 430px;
+  height: 76px;
+
+  color: var(--desaturated-red);
+  font-weight: 400;
+
+  line-height: 1.6rem;
+
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+form input {
+  width: 448px;
+  height: 60px;
+
+  padding: 20px;
+  border-radius: 27.5px;
+}
+
+form button {
+  background: var(--gradient-2);
+  width: 100px;
+  height: 60px;
+  right: 0;
+  position: absolute;
+
+  border-radius: 27.5px;
+  cursor: pointer;
 }
