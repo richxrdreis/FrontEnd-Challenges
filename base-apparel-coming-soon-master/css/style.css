@@ -14,3 +14,22 @@
   --gradient-1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
   --gradient-2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 }
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: var(--gradient-1);
+}
+
+main {
+  padding: 66px 159px;
+}
+
+header {
+  margin-top: 66px;
+}
+
+.img img {
+  width: 30%;
+}
