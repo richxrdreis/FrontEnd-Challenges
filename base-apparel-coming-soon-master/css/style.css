@@ -100,9 +100,18 @@ form {
 form input {
   width: 448px;
   height: 60px;
-
+  border: 1px solid rgb(65, 58, 58, 0.2);
   padding: 20px;
   border-radius: 27.5px;
+  background: url(../images/bg-pattern-desktop.svg);
+}
+
+input::placeholder {
+  color: var(--desaturated-red);
+}
+
+input:focus {
+  border: 2px solid var(--soft-red);
 }
 
 form button {
