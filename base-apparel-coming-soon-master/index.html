@@ -25,11 +25,16 @@
             store. Add your email below to stay up-to-date with announcements
             and our launch deals.
           </p>
-          <form action="">
-            <input type="email" placeholder="Email Address" required />
-            <img src="images/icon-error.svg" alt="" />
-            <button>
-              <img src="images/icon-arrow.svg" alt="" />
+          <form autocomplete="off">
+            <input
+              type="email"
+              id="email"
+              placeholder="Email Address"
+              required
+            />
+            <small><img src="images/icon-error.svg" alt="" /> </small>
+            <button type="submit">
+              <img src="images/icon-arrow.svg" alt="submit" />
             </button>
           </form>
         </div>

@@ -124,3 +124,9 @@ form button {
   border-radius: 27.5px;
   cursor: pointer;
 }
+
+small {
+  display: none;
+  justify-content: flex-end;
+  align-items: center;
+}
