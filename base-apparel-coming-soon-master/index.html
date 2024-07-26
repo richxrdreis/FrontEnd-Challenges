@@ -10,42 +10,53 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Richard Reis | Base Apparel Coming Soon Page</title>
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
   </head>
   <body>
     <div class="container">
-      <div class="text-container">
-        <header>
-          <img src="images/logo.svg" alt="logo" />
-        </header>
-        <div class="main">
-          <h1><span>WE'RE </span>COMING SOON</h1>
-          <p>
-            Hello fellow shoppers! We're currently building our new fashion
-            store. Add your email below to stay up-to-date with announcements
-            and our launch deals.
-          </p>
-          <form autocomplete="off">
-            <input
-              type="email"
-              id="email"
-              placeholder="Email Address"
-              required
-            />
-            <small><img src="images/icon-error.svg" alt="" /> </small>
-            <button type="submit">
-              <img src="images/icon-arrow.svg" alt="submit" />
-            </button>
-          </form>
+      <!-- Logo -->
+      <div class="section-logo">
+        <div class="logo">
+          <img src="images/logo.svg" alt="Logo" />
         </div>
       </div>
-      <div class="image-container">
-        <img
-          src="images/hero-desktop.jpg"
-          alt="hero image"
-          class="hero-image"
-        />
-      </div>
+
+      <!-- Formulário (Form) -->
+      <main class="main-content">
+        <div class="content">
+          <section class="main-sectionText">
+            <h1><span>We're</span> <br />coming soon</h1>
+            <p>
+              Hello fellow shoppers! We're currently building our new fashion
+              store. Add your email below to stay up-to-date with announcements
+              and our launch deals.
+            </p>
+          </section>
+          <form class="main-sectionEmail">
+            <label class="email-container" id="label-input">
+              <input
+                type="email"
+                placeholder="Email Adress"
+                class="inputEmail"
+                id="input-email"
+                required
+              />
+              <img
+                src="images/icon-error.svg"
+                class="icon-erro"
+                alt="Icone de Erro"
+              />
+              <button type="submit" class="Submit" id="btn-submit">
+                <img src="images/icon-arrow.svg" alt="" />
+              </button>
+            </label>
+            <p class="msg-erro">Please provide a valid email</p>
+          </form>
+        </div>
+      </main>
+
+      <!-- Hero Image -->
+      <section class="hero-image"></section>
     </div>
     <script src="js/script.js"></script>
   </body>

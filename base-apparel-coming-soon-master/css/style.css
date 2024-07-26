@@ -5,11 +5,9 @@
   padding: 0;
 
   box-sizing: border-box;
-  border: none;
   outline: none;
 
   font-family: "Josefin Sans", sans-serif;
-  font-size: 16px;
 }
 
 :root {
@@ -22,111 +20,308 @@
 
 /* - Weights: 300, 400, 600 */
 
+img {
+  max-width: 100%;
+}
+
 body {
-  display: flex;
   height: 100vh;
+
+  font-size: 1.6rem;
+
   background: var(--gradient-1);
 }
 
 .container {
-  display: flex;
-  width: 100%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 100%;
+
   height: 100%;
 }
 
-.text-container {
+.section-logo {
   display: flex;
-  flex-direction: column;
-  padding: 60px 163px;
-  width: 60%;
-  background: url(../images/bg-pattern-desktop.svg) no-repeat center center;
+  justify-content: center;
+  align-items: flex-end;
+
+  grid-column: 1;
+  grid-row: 1;
+
+  height: 20%;
+  padding-inline: 5rem;
+  z-index: 1;
+}
+
+.section-logo .logo {
+  width: 100%;
+  max-width: 45rem;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+
+  grid-column: 1;
+  grid-row: 1;
+
+  padding-inline: 5rem;
+
+  background: url(../images/bg-pattern-desktop.svg) center center no-repeat;
   background-size: cover;
 }
 
-.image-container {
-  width: 40%;
-  overflow: hidden;
-}
+.main-content .content {
+  align-self: flex-end;
 
-.hero-image {
   width: 100%;
-  height: 100%;
+  max-width: 45rem;
+  height: 80%;
 }
 
-header {
-  margin-bottom: 134px;
+.main-content .main-sectionText {
+  width: 100%;
 }
 
-.main span {
-  color: var(--desaturated-red);
-  font-weight: 300;
-  font-size: 70px;
-  letter-spacing: 16px;
-  width: 268px;
-  height: 53px;
-}
+.main-content .main-sectionText h1 {
+  text-transform: uppercase;
 
-.main h1 {
-  letter-spacing: 16px;
-  font-size: 70px;
+  margin-top: 12rem;
 
+  font-size: 7rem;
   font-weight: 600;
-
-  width: 370px;
-  height: 130px;
+  letter-spacing: 1.5rem;
 
   color: var(--dark-grayish-red);
-  margin-bottom: 120px;
 }
 
-.main p {
-  width: 430px;
-  height: 76px;
+.main-content .main-sectionText span {
+  font-weight: 300;
 
   color: var(--desaturated-red);
-  font-weight: 400;
-
-  line-height: 1.6rem;
-
-  margin-bottom: 30px;
 }
 
-form {
+.main-content .main-sectionText p {
+  margin-top: 3rem;
+
+  font-weight: 400;
+  line-height: 2.5rem;
+
+  color: var(--desaturated-red);
+}
+
+.main-sectionEmail {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 4rem;
+  gap: 1rem;
+}
+
+.main-sectionEmail .email-container {
+  position: relative;
   display: flex;
   align-items: center;
-  position: relative;
+
+  width: 100%;
+  height: 5.5rem;
+
+  border-radius: 3rem;
+  border: 0.1rem solid var(--desaturated-red);
 }
 
-form input {
-  width: 448px;
-  height: 60px;
-  border: 1px solid rgb(65, 58, 58, 0.2);
-  padding: 20px;
-  border-radius: 27.5px;
-  background: url(../images/bg-pattern-desktop.svg);
+.main-sectionEmail .email-container .inputEmail {
+  width: 100%;
+  height: 100%;
+  padding-left: 3.5rem;
+  border-radius: 3rem;
+  border: none;
+
+  font-size: 1.6rem;
+  font-weight: 400;
+
+  background: transparent;
 }
 
-input::placeholder {
+.main-sectionEmail .email-container .inputEmail::placeholder {
+  font-size: 1.5rem;
+
   color: var(--desaturated-red);
 }
 
-input:focus {
-  border: 2px solid var(--soft-red);
-}
-
-form button {
-  background: var(--gradient-2);
-  width: 100px;
-  height: 60px;
-  right: 0;
-  position: absolute;
-
-  border-radius: 27.5px;
+.main-sectionEmail .email-container .Submit {
   cursor: pointer;
+  border: none;
+
+  width: 14rem;
+  height: 100%;
+  border-radius: 3rem;
+  box-shadow: 2rem 2rem 2rem hsl(0, 74%, 74%, 0.4);
+
+  background: var(--gradient-2);
 }
 
-small {
+.main-sectionEmail .email-container .Submit:hover,
+.main-sectionEmail .email-container .Submit:focus {
+  background: hsl(0, 80%, 86%);
+}
+
+.main-sectionEmail .email-container .icon-erro {
   display: none;
-  justify-content: flex-end;
-  align-items: center;
+  cursor: text;
+
+  margin-right: 2rem;
+}
+
+.main-sectionEmail .msg-erro {
+  display: none;
+
+  padding-left: 3rem;
+
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  color: var(--soft-red);
+}
+
+.container .hero-image {
+  grid-column: 2;
+  grid-row: 1;
+
+  height: 100%;
+
+  background: url(../images/hero-desktop.jpg) center no-repeat;
+  background-size: cover;
+}
+
+/* Dispositivos acima de 2000px (Devices over 2000px) */
+@media screen and (min-width: 2000px) {
+  .section-logo {
+    height: 30%;
+  }
+
+  .section-logo .logo {
+    max-width: 55%;
+  }
+
+  .main-content .content {
+    max-width: 55%;
+    height: 70%;
+  }
+
+  .main-content .main-sectionText {
+    width: 80%;
+  }
+}
+
+/* Responsivo para Tablet */
+@media screen and (max-width: 765px) {
+  .main-content {
+    padding-inline: 1.5rem;
+  }
+
+  .main-content .main-sectionText {
+    text-align: center;
+  }
+
+  .main-content .main-sectionText h1 {
+    width: 93%;
+    margin-top: 6rem;
+
+    font-size: 3rem;
+  }
+
+  .main-sectionEmail .email-container .Submit {
+    width: 10rem;
+  }
+
+  .main-sectionEmail .email-container .icon-erro {
+    margin-right: 0.5rem;
+  }
+
+  .main-sectionEmail .msg-erro {
+    padding-left: 2rem;
+  }
+}
+
+/* Responsivo para Celular */
+
+@media screen and (max-width: 425px) {
+  body {
+    height: 100%;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 334px 572px;
+
+    min-width: 320px;
+  }
+
+  .section-logo {
+    align-items: center;
+
+    grid-column: 1;
+    grid-row: 1;
+
+    height: 8.4rem;
+  }
+
+  .section-logo .logo {
+    max-width: 12rem;
+  }
+
+  .main-content {
+    grid-column: 1;
+    grid-row: 2;
+
+    height: 100%;
+    padding-inline: 2rem;
+  }
+
+  .main-content .content {
+    align-self: flex-start;
+  }
+
+  .main-content .main-sectionText {
+    text-align: center;
+  }
+
+  .main-content .main-sectionText h1 {
+    margin-top: 7rem;
+    font-size: 4rem;
+  }
+
+  .main-content .main-sectionText p {
+    margin-top: 2.5rem;
+
+    font-size: 1.3rem;
+  }
+
+  .main-sectionEmail .email-container .Submit {
+    width: 10rem;
+  }
+
+  .main-sectionEmail .email-container .icon-erro {
+    margin-right: 1rem;
+  }
+
+  .main-sectionEmail .msg-erro {
+    padding-left: 2.5rem;
+  }
+
+  .container .hero-image {
+    align-self: flex-end;
+
+    grid-column: 1;
+    grid-row: 1;
+
+    width: 100%;
+    max-width: 42.5rem;
+    height: 25rem;
+    margin: 0 auto;
+
+    background: url(../images/hero-mobile.jpg) left center no-repeat;
+    background-size: cover;
+  }
 }
