@@ -17,3 +17,18 @@
 }
 
 /* - Weights: 400, 500, 600, 700 */
+
+body {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
