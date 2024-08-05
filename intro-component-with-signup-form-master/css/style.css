@@ -9,11 +9,11 @@
 }
 
 :root {
-  --red: hsl(0, 100%, 74%);
-  --green: hsl(154, 59%, 51%);
-  --blue: hsl(248, 32%, 49%);
-  --dark-blue: hsl(249, 10%, 26%);
-  --grayish-blue: hsl(246, 25%, 77%);
+  --red: #ff7a7a;
+  --green: #38cc8c;
+  --blue: #6055a5;
+  --dark-blue: #3e3c49;
+  --grayish-blue: #b9b6d3;
 }
 
 /* - Weights: 400, 500, 600, 700 */
@@ -25,10 +25,25 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  background-image: url(../images/bg-intro-desktop.png);
+  background-size: cover no-repeat center center;
+  background-color: var(--red);
 }
 
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 70px 100px;
+  width: 1138px;
+  height: 507px;
+}
+
+.left {
+  color: white;
+}
+
+.left h1 {
+  font-size: 3rem;
 }
