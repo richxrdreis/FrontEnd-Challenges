@@ -188,3 +188,92 @@ body {
   padding-left: 3px;
   color: var(--red);
 }
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .left h1 {
+    font-size: 2rem;
+    line-height: 40px;
+    padding-bottom: 15px;
+  }
+
+  .left p {
+    width: 100%;
+    height: auto;
+  }
+
+  .right {
+    padding: 20px;
+    box-shadow: none;
+  }
+
+  .topo {
+    top: -50px;
+  }
+
+  .topo button {
+    font-size: 12px;
+  }
+
+  .input-container input {
+    font-size: 12px;
+  }
+
+  .claim button {
+    font-size: 14px;
+    height: 45px;
+  }
+
+  .claim p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+
+  .left h1 {
+    font-size: 1.5rem;
+    line-height: 30px;
+    padding-bottom: 10px;
+  }
+
+  .left p {
+    width: 100%;
+  }
+
+  .topo {
+    top: -40px;
+  }
+
+  .topo button {
+    font-size: 10px;
+  }
+
+  .input-container input {
+    font-size: 10px;
+  }
+
+  .claim button {
+    font-size: 12px;
+    height: 40px;
+  }
+
+  .claim p {
+    font-size: 9px;
+  }
+}
