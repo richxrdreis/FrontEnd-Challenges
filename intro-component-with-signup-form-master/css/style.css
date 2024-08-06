@@ -103,25 +103,37 @@ body {
   gap: 15px;
 }
 
-.right form input {
+.input-container {
+  position: relative;
+}
+
+.input-container input {
   padding-inline: 30px;
   height: 56px;
   border-radius: 5px;
   font-size: 14px;
   font-weight: 600;
   color: var(--dark-blue);
-
   border: 1px solid rgba(128, 128, 128, 0.281);
+  width: 100%;
 }
 
-.right form input::placeholder {
+.input-container input::placeholder {
   color: var(--dark-blue);
   font-weight: 600;
 }
 
-.right form input:active {
+.input-container input:active {
   border: 1px solid #6055a54b;
   color: #3e3c49;
+}
+
+.input-container .error-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
 }
 
 .claim {
