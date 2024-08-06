@@ -41,9 +41,68 @@ body {
 }
 
 .left {
+  padding: 30px;
   color: white;
 }
 
 .left h1 {
   font-size: 3rem;
+  line-height: 50px;
+  padding-bottom: 25px;
+}
+
+.left p {
+  color: #ffffffe1;
+  width: 497px;
+  height: 79px;
+}
+
+.right {
+  background-color: #fff;
+  border-radius: 9px;
+  padding: 30px;
+  width: 470px;
+  position: relative;
+}
+
+.topo {
+  position: absolute;
+  top: -70px;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.topo button {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: var(--blue);
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  font-size: 13px;
+  color: white;
+}
+
+.topo span {
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.right form {
+  display: grid;
+  gap: 15px;
+}
+
+.right form input {
+  padding: 0px 11px;
+  height: 39px;
+  border-radius: 5px;
+
+  border: 1px solid rgba(128, 128, 128, 0.788);
+}
+
+.right form input:active {
+  border: 1px solid var(--blue);
 }
