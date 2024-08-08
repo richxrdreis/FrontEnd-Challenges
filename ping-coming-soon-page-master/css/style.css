@@ -45,7 +45,6 @@ main {
   flex-direction: column;
   align-items: center;
   width: 660px;
-  height: 733px;
 }
 
 main span {
@@ -98,11 +97,12 @@ section button:hover {
   background-color: #4f7df3d2;
 }
 .img img {
-  margin-top: 60px;
+  margin-top: 50px;
   width: 100%;
   height: 100%;
   background-size: cover;
   background-position: center;
+  margin-bottom: 30px;
 }
 
 footer .icons {
@@ -111,16 +111,20 @@ footer .icons {
   justify-content: center;
   align-items: center;
   fill: var(--blue);
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .icons svg {
   border-radius: 50%;
-  border: 1px solid var(--gray);
+  border: 1px solid #96969636;
   width: 35px;
   height: 35px;
-  border-radius: 50%;
-  border: 1px solid var(--gray);
   padding: 4px;
   background-color: #fff;
+}
+
+.footer2 {
+  color: var(--gray);
+  font-weight: 300;
+  font-size: 14px;
 }
