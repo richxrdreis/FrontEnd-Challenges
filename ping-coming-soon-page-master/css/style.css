@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Karla:ital,wght@0,200..800;1,200..800&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  font-size: 20px;
+}
+
+/* - Weights: 300, 600, 700 */
+
+:root {
+  --blue: #4f7df3;
+  --pale-blue: #c2d3ff;
+  --light-red: #ff5263;
+  --gray: #969696;
+  --very-dark-blue: #151f29;
+}
+
+body {
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  margin-top: 80px;
+}
+
+main h1 {
+  margin-top: 40px;
+  font-size: 40px;
+  font-weight: 300;
+  color: var(--gray);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 660px;
+  height: 733px;
+}
+
+main span {
+  font-size: 40px;
+  color: var(--very-dark-blue);
+  font-weight: 700;
+}
+
+main p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+section input {
+  margin-top: 40px;
+  width: 420px;
+  height: 55px;
+  border-radius: 27.5px;
+  border: 1px solid var(--gray);
+  margin-right: 20px;
+  border: 1px solid #4f7df36e;
+}
+
+section input::placeholder {
+  color: var(--gray);
+  font-weight: 200;
+  padding-inline: 35px;
+}
+
+section button {
+  width: 200px;
+  height: 55px;
+  border-radius: 27.5px;
+  border: none;
+  background-color: var(--blue);
+  color: #fff;
+  font-weight: 400;
+  box-shadow: 0px 5px 5px rgba(79, 125, 243, 0.356);
+  cursor: pointer;
+}
+
+section button:hover {
+  transition: 0.2s ease-in-out;
+  background-color: #4f7df3d2;
+}
