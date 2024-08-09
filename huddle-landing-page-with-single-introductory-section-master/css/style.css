@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Karla:ital,wght@0,200..800;1,200..800&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Karla:ital,wght@0,200..800;1,200..800&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --violet: #674baf;
+  --soft-magenta: #e882e8;
+
+  --font-poppins: "Poppins", sans-serif;
+  /* - Weights: 400, 600 */
+
+  --font-open-sans: "Open Sans", sans-serif;
+  /* - Weights: 400 */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--violet);
+  background-image: url(../images/bg-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  /* overflow: hidden; */
+}
+
+.container {
+  padding: 50px 70px;
+}
+
+header {
+  width: 100%;
+  height: 57px;
+  margin-bottom: 110px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+main .card,
+main .text {
+  flex: 1;
+  min-width: 300px;
+}
+
+main .card {
+  background-image: url(../images/illustration-mockups.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 650px;
+}
+
+main .text {
+  align-content: flex-start;
+  text-align: flex-start;
+  flex-direction: column;
+  padding: 50px;
+}
+
+main .text h1 {
+  color: white;
+  margin-top: 30px;
+  font-size: 2.8rem;
+  font-family: var(--font-open-sans);
+  font-family: 400;
+  margin-bottom: 20px;
+  line-height: 4rem;
+}
+
+main .text p {
+  font-family: var(--font-poppins);
+  color: #fff1ff;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6rem;
+  margin-bottom: 25px;
+}
+
+main button {
+  width: 202px;
+  height: 58px;
+  border-radius: 26px;
+  background-color: white;
+  color: var(--violet);
+  font-family: var(--font-poppins);
+  font-size: 1.1rem;
+  font-weight: 400;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.274);
+
+  cursor: pointer;
+}
+
+main button:hover {
+  transition: 0.2s;
+  background-color: var(--soft-magenta);
+  color: white;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icons {
+  display: flex;
+  gap: 17px;
+}
+
+.icons svg {
+  width: 40px;
+  height: 40px;
+  padding: 6px;
+  border-radius: 50%;
+  border: 1px solid white;
+  fill: white;
+  cursor: pointer;
+}
+
+.icons svg:hover {
+  border: 1px solid var(--soft-magenta);
+  fill: var(--soft-magenta);
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: url(../images/bg-mobile.svg);
+  }
+
+  header {
+    margin-bottom: 10px;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main .card,
+  main .text {
+    width: 90%;
+  }
+
+  main .text {
+    padding: 30px;
+  }
+
+  main .text h1 {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+
+  main .text p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+
+  main button {
+    width: 150px;
+    height: 45px;
+    font-size: 0.9rem;
+  }
+
+  footer {
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .icons {
+    gap: 10px;
+  }
+
+  .icons svg {
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background-image: url(../images/bg-mobile.svg);
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  main .text h1 {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+
+  main .text p {
+    font-size: 0.7rem;
+  }
+
+  main button {
+    width: 120px;
+    height: 40px;
+    font-size: 0.8rem;
+  }
+
+  .icons svg {
+    width: 25px;
+    height: 25px;
+    padding: 2px;
+  }
+}
