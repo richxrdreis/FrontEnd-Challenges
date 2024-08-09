@@ -96,6 +96,21 @@ section button:hover {
   transition: 0.2s ease-in-out;
   background-color: #4f7df3d2;
 }
+
+.js-texto {
+  display: flex;
+  position: absolute;
+  margin-left: 15px;
+  font-size: 14px;
+  font-style: italic;
+  color: red;
+  display: none;
+}
+
+.borderInput {
+  border: 1px solid red;
+}
+
 .img img {
   margin-top: 50px;
   width: 100%;
@@ -112,13 +127,20 @@ footer .icons {
   align-items: center;
   fill: var(--blue);
   margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.icons svg:hover {
+  transition: 0.4s ease-in-out;
+  background-color: #4f7df3;
+  fill: #fff;
 }
 
 .icons svg {
   border-radius: 50%;
   border: 1px solid #96969636;
-  width: 35px;
-  height: 35px;
+  width: 33px;
+  height: 33px;
   padding: 4px;
   background-color: #fff;
 }
@@ -127,4 +149,82 @@ footer .icons {
   color: var(--gray);
   font-weight: 300;
   font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+
+  main {
+    width: 90%;
+  }
+
+  main h1 {
+    font-size: 32px;
+  }
+
+  main span {
+    font-size: 32px;
+  }
+
+  section input {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  section button {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .js-texto {
+    font-size: 12px;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+  main {
+    width: 80%;
+  }
+
+  main h1 {
+    font-size: 30px;
+  }
+
+  main span {
+    font-size: 30px;
+  }
+
+  main p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  section input {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  section button {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  footer {
+    margin-top: 50px;
+  }
 }
