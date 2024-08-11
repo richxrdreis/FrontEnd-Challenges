@@ -61,7 +61,7 @@ h1 {
   border-radius: 20px;
   position: absolute;
   bottom: 15%;
-  left: 15%;
+  left: 8%;
   transform: translateX(-50%);
   color: var(--rose-900);
   font-weight: 600;
@@ -73,8 +73,6 @@ h1 {
   border: 1px solid #260f087e;
 
   cursor: pointer;
-
-  margin-top: 17px;
 }
 
 .item-1 .button-text {
