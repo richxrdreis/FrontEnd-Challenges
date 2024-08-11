@@ -25,11 +25,10 @@ body {
   background-color: var(--rose-50);
 }
 
-.produtos {
+.container {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  min-width: 810px;
+  gap: 20px;
+  padding: 20px;
 }
 
 h1 {
@@ -37,10 +36,13 @@ h1 {
   color: var(--rose-900);
 }
 
+.produtos {
+  flex: 1;
+  min-width: 810px;
+}
+
 .seu-carrinho {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  flex-shrink: 0;
   background-color: #fff;
   width: 386px;
   height: 323px;
