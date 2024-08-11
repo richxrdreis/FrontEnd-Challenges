@@ -19,3 +19,29 @@
   --rose-500: hsl(12, 20%, 44%);
   --rose-900: hsl(14, 65%, 9%);
 }
+
+body {
+  height: 100vh;
+  background-color: var(--rose-50);
+}
+
+.produtos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 810px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--rose-900);
+}
+
+.seu-carrinho {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  width: 386px;
+  height: 323px;
+}
