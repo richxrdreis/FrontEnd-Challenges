@@ -6,18 +6,19 @@
   box-sizing: border-box;
   font-family: "Red Hat Text", sans-serif;
   font-size: 16px;
+  border: none;
   /* - Weights: 400, 600, 700 */
 }
 
 :root {
-  -red: hsl(14, 86%, 42%);
-  -green: hsl(159, 69%, 38%);
-  --rose-50: hsl(20, 50%, 98%);
-  --rose-100: hsl(13, 31%, 94%);
-  --rose-300: hsl(14, 25%, 72%);
-  --rose-400: hsl(7, 20%, 60%);
-  --rose-500: hsl(12, 20%, 44%);
-  --rose-900: hsl(14, 65%, 9%);
+  -red: #c73a0f;
+  -green: #1ea475;
+  --rose-50: #fcf9f7;
+  --rose-100: #f4edeb;
+  --rose-300: #c9aea6;
+  --rose-400: #ad8985;
+  --rose-500: #87635a;
+  --rose-900: #260f08;
 }
 
 body {
@@ -34,11 +35,53 @@ body {
 h1 {
   font-size: 2rem;
   color: var(--rose-900);
+  margin-bottom: 40px;
 }
 
 .produtos {
   flex: 1;
   min-width: 810px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.item-1 .imagens-produtos {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.item-1 button {
+  width: 160px;
+  height: 40px;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 15%;
+  left: 15%;
+  transform: translateX(-50%);
+  color: var(--rose-900);
+  font-weight: 600;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #260f087e;
+
+  cursor: pointer;
+
+  margin-top: 17px;
+}
+
+.item-1 .button-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
 }
 
 .seu-carrinho {
