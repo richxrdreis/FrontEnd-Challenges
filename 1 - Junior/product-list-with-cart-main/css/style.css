@@ -39,47 +39,33 @@ h1 {
   margin-bottom: 40px;
 }
 
+/* Toda a minha lista de produtos */
+
 .produtos {
   padding: 0 70px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  width: 251px;
+  height: 241px;
+  gap: 25px;
+}
+
+.imagens-produtos {
   width: 250px;
   height: 250px;
-}
 
-.item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* position: relative; */
-}
-
-.item .imagens-produtos {
-  /* width: 250px; */
-  /* height: 250px; */
   border-radius: 10px;
 }
 
-.item .item-button {
-  width: 160px;
-  height: 40px;
-  border-radius: 20px;
-  transform: translateY(-50%);
+/* Estilização do button */
+
+.item-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
   color: var(--rose-900);
   font-weight: 600;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  border: 1px solid #260f087e;
-
-  cursor: pointer;
-}
-
-.item .button-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 5px;
+  border: 1px solid #260f084d;
 }
