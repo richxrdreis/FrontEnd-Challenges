@@ -29,7 +29,7 @@ body {
 .container {
   display: flex;
   gap: 20px;
-  padding: 20px;
+  padding: 80px;
 }
 
 h1 {
@@ -55,13 +55,13 @@ h1 {
   border-radius: 10px;
 }
 
-.item-1 button {
+.item-1 .item-button {
   width: 160px;
   height: 40px;
   border-radius: 20px;
   position: absolute;
   bottom: 15%;
-  left: 8%;
+  left: 125px;
   transform: translateX(-50%);
   color: var(--rose-900);
   font-weight: 600;
