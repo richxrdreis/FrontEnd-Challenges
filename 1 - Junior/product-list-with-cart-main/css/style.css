@@ -64,6 +64,10 @@ h1 {
   align-items: center;
   justify-content: center;
 
+  width: 158px;
+  height: 44px;
+  border-radius: 20px;
+
   background-color: white;
   color: var(--rose-900);
   font-weight: 600;
