@@ -28,18 +28,19 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1200px;
   padding: 20px;
 }
 
 h1 {
-  margin-left: 70px;
-  font-size: 2rem;
+  margin-top: 70px;
+  padding: 0 70px;
+  font-size: 2.1rem;
   color: var(--rose-900);
   margin-bottom: 40px;
 }
 
 .produtos {
+  padding: 0 70px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 250px;
