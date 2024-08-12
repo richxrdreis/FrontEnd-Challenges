@@ -27,9 +27,9 @@ body {
 }
 
 .container {
-  display: flex;
-  gap: 20px;
-  padding: 80px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
 }
 
 h1 {
@@ -39,27 +39,30 @@ h1 {
 }
 
 .produtos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
   flex: 1;
-  min-width: 810px;
 }
 
 .item {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  position: relative;
+  /* position: relative; */
 }
 
-.item-1 .imagens-produtos {
+.item .imagens-produtos {
   width: 250px;
   height: 250px;
   border-radius: 10px;
 }
 
-.item-1 .item-button {
+.item .item-button {
   width: 160px;
   height: 40px;
   border-radius: 20px;
-  position: absolute;
+  /* position: absolute; */
   bottom: 15%;
   left: 125px;
   transform: translateX(-50%);
@@ -75,7 +78,7 @@ h1 {
   cursor: pointer;
 }
 
-.item-1 .button-text {
+.item .button-text {
   display: flex;
   justify-content: center;
   align-items: center;
