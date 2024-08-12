@@ -33,6 +33,7 @@ body {
 }
 
 h1 {
+  width: 100%;
   font-size: 2rem;
   color: var(--rose-900);
   margin-bottom: 40px;
