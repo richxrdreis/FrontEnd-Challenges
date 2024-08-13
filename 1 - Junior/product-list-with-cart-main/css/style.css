@@ -22,13 +22,21 @@
 }
 
 body {
-  height: 100vh;
+  /* height: 100vh; */
   background-color: var(--rose-50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-  width: 100%;
-  padding: 20px;
+  max-width: 1600px;
+  align-items: center;
+  padding: 0 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
 }
 
 h1 {
@@ -47,14 +55,21 @@ h1 {
   grid-template-columns: repeat(3, 1fr);
   width: 251px;
   height: 241px;
+  max-width: 1600px;
   gap: 25px;
 }
 
 .imagens-produtos {
   width: 250px;
-  height: 250px;
+  height: auto;
 
   border-radius: 10px;
+}
+
+/* Estilo geral dos itens */
+
+.item {
+  position: relative;
 }
 
 /* Estilização do button */
@@ -71,5 +86,54 @@ h1 {
   background-color: white;
   color: var(--rose-900);
   font-weight: 600;
-  border: 1px solid #260f084d;
+  border: 1px solid var(--rose-500);
+
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  cursor: pointer;
+}
+
+.item-button img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-text {
+  margin-left: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Especificações dos itens */
+
+.item p {
+  font-size: 0.9rem;
+  margin-top: 40px;
+  color: var(--rose-500);
+  font-weight: 400;
+}
+
+.item h5 {
+  margin-top: 6px;
+  font-size: 1rem;
+  color: var(--rose-900);
+}
+
+/* Carrinho de compras */
+
+.seu-carrinho {
+  width: 386px;
+  height: 300px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  top: 82px;
+  /* left: 1160px; */
+  right: 50%;
+  transform: translateX(160%);
 }
