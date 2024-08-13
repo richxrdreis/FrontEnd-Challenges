@@ -11,8 +11,8 @@
 }
 
 :root {
-  -red: #c73a0f;
-  -green: #1ea475;
+  --red: #c73a0f;
+  --green: #1ea475;
   --rose-50: #fcf9f7;
   --rose-100: #f4edeb;
   --rose-300: #c9aea6;
@@ -112,15 +112,21 @@ h1 {
 
 .item p {
   font-size: 0.9rem;
-  margin-top: 40px;
+  margin-top: 38px;
   color: var(--rose-500);
   font-weight: 400;
 }
 
 .item h5 {
-  margin-top: 6px;
+  margin-top: 4px;
   font-size: 1rem;
   color: var(--rose-900);
+  margin-bottom: 3px;
+}
+
+.item .preco {
+  color: var(--red);
+  font-weight: 700;
 }
 
 /* Carrinho de compras */
