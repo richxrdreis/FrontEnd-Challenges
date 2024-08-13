@@ -143,3 +143,24 @@ h1 {
   right: 50%;
   transform: translateX(160%);
 }
+
+.seu-carrinho h2 {
+  color: var(--red);
+  font-size: 1.2rem;
+  margin-top: 3px;
+}
+
+/* imagem (bolo) */
+
+.seu-carrinho .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.seu-carrinho .img img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
