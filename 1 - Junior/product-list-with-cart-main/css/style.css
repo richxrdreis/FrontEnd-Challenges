@@ -147,7 +147,6 @@ h1 {
   border-radius: 10px;
   position: absolute;
   top: 82px;
-  /* left: 1160px; */
   right: 50%;
   transform: translateX(160%);
 }
@@ -191,57 +190,58 @@ h1 {
   border: none;
 } */
 
-.produtos .item {
-  background-image: url("../assets/images/image-baklava-desktop.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
 /* Responsividade */
 
-@media (max-width: 1200px) {
-  .container {
-    padding: 0 40px;
-  }
-  .produtos {
-    padding: 0;
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
+/* Para Tablets */
 
 @media (max-width: 768px) {
   .container {
     padding: 0 20px;
   }
+
   h1 {
     font-size: 1.8rem;
     padding: 0;
   }
+
   .produtos {
-    grid-template-columns: repeat(3, 1fr); /* Mantém 3 colunas em tablets */
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
   }
+
+  .seu-carrinho {
+    width: auto;
+    height: auto;
+    right: 50%;
+  }
 }
+
+/* Para celulares */
 
 @media (max-width: 480px) {
   .container {
     padding: 0 20px;
   }
+
   h1 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     padding: 0;
   }
+
   .produtos {
-    grid-template-columns: 1fr; /* Uma coluna em celulares */
+    grid-template-columns: 1fr;
     padding: 0;
-    justify-content: center; /* Centraliza os itens */
+    justify-content: center;
   }
+
   .item-button {
     width: 100%;
     max-width: 300px;
     bottom: 60px;
   }
+
   .seu-carrinho {
+    display: none;
     width: 100%;
     height: auto;
     position: relative;
