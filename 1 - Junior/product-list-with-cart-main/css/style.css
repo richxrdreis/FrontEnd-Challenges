@@ -197,7 +197,8 @@ h1 {
 .cart-item {
   display: flex;
   justify-content: space-between;
-  padding: 10px 0;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(148, 148, 148, 0.13);
 }
 
 .confirm-order {
@@ -208,6 +209,82 @@ h1 {
   display: block;
 }
 
+.confirm-order {
+  width: 340px;
+  height: 53px;
+  background-color: var(--red);
+  color: white;
+  border-radius: 27px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.confirm-order:hover {
+  background-color: #7e250a;
+}
+
+/* estilizando os textos */
+
+.cart-total {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  color: var(--green);
+  font-weight: 600;
+}
+
+.cart-item-price {
+  color: var(--rose-500);
+  font-weight: 600;
+}
+
+.cart-item-quantity {
+  color: var(--green);
+  font-weight: 700;
+}
+
+span.cart-item-name {
+  color: var(--rose-900);
+  font-weight: 600;
+}
+
+/* estilizando os buttons */
+
+.remove-item {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--rose-500);
+  color: var(--rose-500);
+}
+
+button.decrease-quantity {
+  color: white;
+  background-color: var(--red);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button.increase-quantity {
+  color: white;
+  background-color: var(--red);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* Responsividade */
 
 /* Para Tablets */
