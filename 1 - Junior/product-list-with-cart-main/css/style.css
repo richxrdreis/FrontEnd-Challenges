@@ -253,16 +253,16 @@ h1 {
   }
 
   .item-button {
-    bottom: 90px;
+    bottom: 125px;
+    left: 200px;
   }
 
   .seu-carrinho {
-    /* display: none; */
     width: 100%;
     height: auto;
     position: relative;
     right: 0;
-    top: 3150px;
+    top: 3250px;
     transform: none;
     padding: 20px;
   }
