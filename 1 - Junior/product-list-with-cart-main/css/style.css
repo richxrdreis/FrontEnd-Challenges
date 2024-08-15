@@ -75,6 +75,16 @@ h1 {
   position: relative;
 }
 
+/* ainda é o estilo geral, porém no modo responsivo */
+
+.imagens-produtos-mobile {
+  display: none;
+  width: 160%;
+  height: 60%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 /* Estilização do button */
 
 .item-button {
@@ -224,7 +234,7 @@ h1 {
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     padding: 0;
   }
 
@@ -234,19 +244,30 @@ h1 {
     justify-content: center;
   }
 
+  .imagens-produtos {
+    display: none;
+  }
+
+  .imagens-produtos-mobile {
+    display: block;
+  }
+
   .item-button {
-    width: 100%;
-    max-width: 300px;
-    bottom: 60px;
+    bottom: 90px;
   }
 
   .seu-carrinho {
-    display: none;
+    /* display: none; */
     width: 100%;
     height: auto;
     position: relative;
     right: 0;
+    top: 3150px;
     transform: none;
     padding: 20px;
+  }
+
+  .seu-carrinho h2 {
+    font-size: 1.5rem;
   }
 }
