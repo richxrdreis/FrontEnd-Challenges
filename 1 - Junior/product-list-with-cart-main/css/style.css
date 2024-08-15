@@ -107,6 +107,7 @@ h1 {
   transform: translateX(-50%);
 
   cursor: pointer;
+  transition: border-color 0.3s ease, color 0.3s ease;
 }
 
 .item-button img {
@@ -191,15 +192,6 @@ h1 {
   font-size: 0.95rem;
 }
 
-/* quando ativar js, chamar essas classes abaixo => */
-/* 
-.clicarBtn {
-  display: none;
-  background-color: #c73a0f;
-  color: var(--red);
-  border: none;
-} */
-
 /* Responsividade */
 
 /* Para Tablets */
@@ -234,7 +226,7 @@ h1 {
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 0;
   }
 
