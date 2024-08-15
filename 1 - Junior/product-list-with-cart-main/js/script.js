@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const cartContainer = document.querySelector(".cart-items");
   const cartTitle = document.querySelector(".seu-carrinho h2");
   const confirmOrderButton = document.querySelector(".confirm-order");
-  const imgEParagrafo = document.querySelector(".img-e-paragrafo"); // Selecione a imagem e o parágrafo
+  const imgEParagrafo = document.querySelector(".img-e-paragrafo");
   let cartItems = [];
 
   document.querySelectorAll(".item-button").forEach((button) => {
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <button class="decrease-quantity" data-index="${index}">-</button>
             <span class="cart-item-quantity">${item.quantity}</span>
             <button class="increase-quantity" data-index="${index}">+</button>
-            <button class="remove-item" data-index="${index}">Remove</button>
+            <button class="remove-item" data-index="${index}">X</button>
           `;
       cartContainer.appendChild(itemElement);
 
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const totalElement = document.createElement("div");
     totalElement.className = "cart-total";
-    totalElement.innerHTML = `Total: $${total.toFixed(2)}`;
+    totalElement.innerHTML = `Order Total: $${total.toFixed(2)}`;
     cartContainer.appendChild(totalElement);
 
     // Exibir o botão de confirmar ordem se houver itens no carrinho
@@ -80,11 +80,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelector(".confirm-order").addEventListener("click", () => {
     if (cartItems.length > 0) {
-      alert("Order confirmed!");
+      alert("Pedido confirmado, por favor aguarde no seu endereço!");
       cartItems = [];
       updateCart();
     } else {
-      alert("Your cart is empty!");
+      alert("Seu carrinho tá vazio!");
     }
   });
 });
