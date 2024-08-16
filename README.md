@@ -24,3 +24,5 @@ Aqui abaixo estão listados alguns dos desafios que já concluí ou que estão e
 
 
 ## JUNIOR
+
+![image](https://github.com/user-attachments/assets/28d0c629-4738-478a-9a0a-bef485dd79cd)
