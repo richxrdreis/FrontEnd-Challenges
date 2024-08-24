@@ -14,42 +14,101 @@
     <title>Richard Reis | Mortgage repayment calculator</title>
   </head>
   <body>
+    <div class="container">
+      <div class="left">
+        <div class="header">
+          <h2>Mortgage Calculator</h2>
+          <button class="clear">Clear All</button>
+        </div>
 
-    Mortgage Calculator
-    Clear All
+        <form id="mortgage-form">
+          <div class="form-item">
+            <label class="light-text" for="mortgage-amount">Mortgage Amount</label>
+            <div class="form-flex" id="mortgage-amount-main">
+              <p class="form-symbol">$</p>
+              <input id="mortgage-amount" type="number" name="mortgage-amount" required>
+            </div>
 
-    Mortgage Amount
+            <p class="form-alert" id="amount-alert">This field is required</p>
+          </div>
 
-    Mortgage Term
+          <div class="form-item">
+            <div class="form-col">
+              <div class="form-item">
+                <label for="mortgage-term">Mortgage Term</label>
+                <div class="form-flex" id="mortgage-term-main">
+                  <input type="number" id="mortgage-term" name="mortgage-term" required>
+                  <p class="form-symbol">Years</p>
+                </div>
+                <p class="form-alert" id="term-alert">This field is required</p>
+              </div>
+              <div class="form-item">
+                <label class="light-text" for="interest-rate">Interest Rate</label>
+                <div class="form-flex" id="interest-rate-main">
+                  <input id="interest-rate" type="number" name="interest-rate" step="0.01" required>
+                  <p class="form-symbol">%</p>
+                </div>
 
-    Interest Rate
+                <p class="form-alert" id="rate-alert">This field is required</p>
+              </div>
+            </div>
+          </div>
 
-    Mortgage Type
-    Repayment
-    Interest Only
+          <div class="form-item">
+            <label class="light-text">Mortgage Type</label>
 
-    Calculate Repayments
+            <div class="radio-inputs">
+              <input id="repayment" class="mortgage-type" type="radio" name="mortgage-type" value="repayment" required>
+              <label for="repayment">Repayment</label>
+            </div>
 
-    Empty results start
+            <div class="radio-inputs">
+              <input id="interest-only" class="mortgage-type" type="radio" name="mortgage-type" value="interest-only" required>
+              <label for="interest-only">Interest Only</label>
+            </div>
 
-    Results shown here
+            <p class="form-alert" id="type-alert">This field is required</p>
+          </div>
 
-    Complete the form and click “calculate repayments” to see what 
-  your monthly repayments would be.
+          <div class="form-item">
+            <button type="button" id="calculate-btn" class="calculate-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="#133041" d="M18.75 2.25H5.25a1.5 1.5 0 0 0-1.5 1.5v16.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5V3.75a1.5 1.5 0 0 0-1.5-1.5Zm-10.5 16.5a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25Zm0-3.75a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25ZM12 18.75a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25ZM12 15a1.125 1.125 0 1 1 0-2.25A1.125 1.125 0 0 1 12 15Zm3.75 3.75a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25Zm0-3.75a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25Zm1.5-5.25a.75.75 0 0 1-.75.75h-9a.75.75 0 0 1-.75-.75V6a.75.75 0 0 1 .75-.75h9a.75.75 0 0 1 .75.75v3.75Z"/></svg>
+              Calculate Repayments
+            </button>
+          </div>
+        </form>
+      </div>
 
-    Empty results end
+      <div class="right">
+        <div class="defalt-text" id="default-text">
+          <img src="assets/images/illustration-empty.svg" alt="">
 
-    Completed results start
+          <h2>Results shown here</h2>
+          <p class="light-text">Complete the form and click “calculate repayments” to see what 
+          your monthly repayments would be.</p>
+        </div>
 
-    Your results
+        <div id="calculations-contianer" class="calculations-container">
+          <h2>Your results</h2>
 
-    Your results are shown below based on the information you provided. 
-  To adjust the results, edit the form and click “calculate repayments” again.
+          <p class="light-text">Your results are shown below based on the information you provided. 
+          To adjust the results, edit the form and click “calculate repayments” again.</p>
 
-    Your monthly repayments
+          <div class="calculations">
+            <div class="monthly">
+              <p class="light-text">Your monthly repayments</p>
+              <span id="result-monthly-result"></span>
+            </div>
 
-    Total you'll repay over the term
+            <div class="line"></div>
 
-    Completed results end
+            <div class="total-term">
+              <p class="light-text">Total you'll repay over the term</p>
+              <span id="term-result" class="term-result"></span>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
+  <script src="js/script.js"></script>
 </html>
