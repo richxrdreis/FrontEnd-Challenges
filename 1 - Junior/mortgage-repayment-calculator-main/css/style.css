@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 * {
-    margin: 0;
+    /* margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; */
     font-size: 16px;
     font-family: "Plus Jakarta Sans", sans-serif;
 }
@@ -13,10 +13,81 @@
 :root {
 --Lime: #d7da2f;
 --Red: #d73328;
+
+
 --White: #ffffff;
 --Slate-100: #e3f3fd;
 --Slate-300: #9abed5;
 --Slate-500: #6b94a8;
 --Slate-700: #4e6e7e;
 --Slate-900: #122f3f;
+}
+
+img, svg {
+    max-width: 100%;
+    display: block;
+}
+
+label {
+    width: 100%;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+input[type='number'] {
+    width: 100%;
+    padding: .25rem .5rem;
+    font-weight: 700;
+    border: 0;
+    outline: 0;
+}
+
+input[type='radio'] {
+    appearance: none;
+    width: .5rem;
+    height: .5rem;
+    margin-right: .5rem;
+    outline: 2px solid var(--Slate-900);
+    outline-offset: 3px;
+    border-radius: 50%;
+}
+
+input[type='radio']:checked {
+    background-color: var(--Lime);
+}
+
+.radio-inputs {
+    cursor: pointer;
+    padding: .5rem 1rem;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    border: 1px solid var(--Slate-300);
+}
+
+.radio-inputs > * {
+    cursor: pointer;
+}
+
+.radio-inputs:hover {
+    border: 1px solid var(--Lime);
+}
+
+.radio-inputs label {
+    margin-bottom: 0;
+}
+
+.radio-inputs.selected {
+    background-color: #d7da2f5d;
+    border: 1px solid var(--Lime);
+}
+
+.radio-inputs.selected input[type='radio'] {
+    outline: 3px solid var(--Lime);
+}
+
+button {
+    cursor: pointer;
 }
