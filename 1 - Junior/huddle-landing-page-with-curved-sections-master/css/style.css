@@ -121,8 +121,16 @@ main .flex-stats p {
     margin-bottom: 382px;
 }
 
+/* estilizando globalmente todas as imagens do article */
+
+main article img {  
+    width: 400px;
+}
+
+/* fim da estilização global */
+
 main article {
-    background-image: url(../images/bg-section-top-desktop-1.svg);
+    /* background-image: url(../images/bg-section-top-desktop-1.svg); */
     background-size: cover;
     background-repeat: no-repeat;
 
