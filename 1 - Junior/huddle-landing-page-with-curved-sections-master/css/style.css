@@ -123,23 +123,23 @@ main .flex-stats p {
 
 /* estilizando globalmente todos os articles */
 
-main article img {  
-    width: 400px;
-}
-
 main article {
     margin-bottom: 410px;
 }
 
 /* fim da estilização global */
 
-main article {
+main .bg {
     background-image: url(../images/bg-section-top-desktop-1.svg);
     background-size: cover;
     background-repeat: no-repeat;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+main .left-img img {
+    width: 400px;
 }
 
 main article .left {
@@ -161,4 +161,14 @@ main article .left p {
     color: var(--Very-Dark-Cyan);
     font-size: 0.9rem;
     font-weight: 500;
+}
+
+
+
+
+
+
+
+main .right-img img {
+    width: 400px;
 }
