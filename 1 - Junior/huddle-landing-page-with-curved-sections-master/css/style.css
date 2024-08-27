@@ -121,34 +121,44 @@ main .flex-stats p {
     margin-bottom: 382px;
 }
 
-/* estilizando globalmente todas as imagens do article */
+/* estilizando globalmente todos os articles */
 
 main article img {  
     width: 400px;
 }
 
+main article {
+    margin-bottom: 410px;
+}
+
 /* fim da estilização global */
 
 main article {
-    /* background-image: url(../images/bg-section-top-desktop-1.svg); */
+    background-image: url(../images/bg-section-top-desktop-1.svg);
     background-size: cover;
     background-repeat: no-repeat;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    text-align: center;
 }
 
 main article .left {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 
 main article .left h2 {
     font-family: var(--fonte-poppins);
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: var(--Very-Dark-Cyan);
+}
+
+main article .left p {
+    margin-top: 25px;
+    font-family: var(--fonte-poppins);
+    color: var(--Very-Dark-Cyan);
+    font-size: 0.9rem;
+    font-weight: 500;
 }
