@@ -364,8 +364,10 @@ footer .right form button:hover {
     background-color: var(--Light-Pink);
 }
 
-footer .right form p {
+.errorMsg {
     display: none;
     color: var(--Light-Red);
     font-size: 0.7rem;
+
+    margin-top: 5px;
 }
