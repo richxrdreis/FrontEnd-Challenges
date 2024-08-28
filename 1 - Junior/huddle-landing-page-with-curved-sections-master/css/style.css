@@ -356,7 +356,12 @@ footer .right form button {
     border: none;
     background-color: var(--Pink);
     color: white;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.151);
     font-weight: 600;
+}
+
+footer .right form button:hover {
+    background-color: var(--Light-Pink);
 }
 
 footer .right form p {
