@@ -45,9 +45,16 @@ header button {
     background-color: white;
     border: 1px solid var(--Light-Pink);
     color: var(--Light-Pink);
+    box-shadow: 1px 1px 1px 1px #ff8fd828;
 
     font-family: var(--fonte-poppins);
     cursor: pointer;
+}
+
+header button:hover {
+    color: var(--Pink);
+    border: 1px solid var(--Pink);
+    box-shadow: 1px 1px 1px 1px #ff52c028;
 }
 
 /* conteúdo principal */
@@ -89,6 +96,13 @@ main section .btn-principal {
     cursor: pointer;
 }
 
+main section .btn-principal:hover {
+    background-color: var(--Light-Pink);
+    font-weight: 600;
+}
+
+/* imagem principal */
+
 main .imagem /* imagem = article */ {
     margin-top: 90px;
     display: flex;
@@ -96,12 +110,14 @@ main .imagem /* imagem = article */ {
     justify-content: center;
 }
 
+/* Status - Comunidade & Mensagens */
+
 main .flex-stats {
     margin-top: 95px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 250px;
+    gap: 275px;
 }
 
 main .flex-stats img {
@@ -121,21 +137,28 @@ main .flex-stats p {
     margin-bottom: 382px;
 }
 
+main .flex-stats .right p {
+    font-family: var(--fonte-poppins);
+    color: rgba(128, 128, 128, 0.801);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
 /* estilizando globalmente todos os articles */
 
 main article {
     margin-bottom: 410px;
 }
 
-/* fim da estilização global */
+/* Primeiro article */
 
-main .bg {
-    background-image: url(../images/bg-section-top-desktop-1.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-
+main .col {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    display: flex;
+    justify-content: center;
+    gap: 100px;
 }
 
 main .left-img img {
@@ -156,7 +179,7 @@ main article .left h2 {
 }
 
 main article .left p {
-    margin-top: 25px;
+    margin-top: 7px;
     font-family: var(--fonte-poppins);
     color: var(--Very-Dark-Cyan);
     font-size: 0.9rem;
@@ -164,11 +187,78 @@ main article .left p {
 }
 
 
+/* Segundo article */
 
+main .right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
+main .right h2 {
+    font-family: var(--fonte-poppins);
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--Very-Dark-Cyan);
+}
 
+main .right p {
+    margin-top: 7px;
+    font-family: var(--fonte-poppins);
+    color: var(--Very-Dark-Cyan);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* terceiro article = igual ao primeiro */
 
 
 main .right-img img {
     width: 400px;
 }
+
+main .section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .section h1 {
+    font-family: var(--fonte-poppins);
+    color: var(--Very-Dark-Cyan);
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+main .section .btn-principal {
+    width: 296px;
+    height: 60px;
+    border: none;
+    color: white;
+    background-color: var(--Pink);
+    border-radius: 30px;
+
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.123);
+
+    font-family: var(--fonte-poppins);
+    cursor: pointer;
+
+    margin-bottom: 340px;
+}
+
+main .section .btn-principal:hover {
+    background-color: var(--Light-Pink);
+    font-weight: 600;
+}
+
+footer {
+    background-image: url(../images/bg-footer-top-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+
+
+    min-height: 400px;
+    padding: 72px 100px;
+}
+
