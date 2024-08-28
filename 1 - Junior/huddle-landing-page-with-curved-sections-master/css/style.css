@@ -360,6 +360,7 @@ footer .right form button {
 }
 
 footer .right form p {
+    display: none;
     color: var(--Light-Red);
     font-size: 0.7rem;
 }
