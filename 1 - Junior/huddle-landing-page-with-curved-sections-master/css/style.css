@@ -265,6 +265,7 @@ footer {
     font-family: var(--fonte-poppins);
 }
 
+
 footer .left .logo {
     display: flex;
     align-items: center;
@@ -281,6 +282,7 @@ footer .left .logo img {
 }
 
 footer .left p {
+    font-size: 0.8rem;
     margin-bottom: 20px;
 }
 
@@ -317,6 +319,10 @@ footer .email p {
     align-items: center;
 }
 
+footer .icones {
+    margin-bottom: 60px;
+}
+
 
 footer .icones svg {
     width: 40px;
@@ -328,8 +334,32 @@ footer .icones svg:hover {
     transform: scale(1.03);
 }
 
-/* 
-footer .left {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-} */
+footer .right h2 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+footer .right form input {
+    width: 240px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 25px;
+}
+
+footer .right form button {
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--Pink);
+    color: white;
+    font-weight: 600;
+}
+
+footer .right form p {
+    color: var(--Light-Red);
+    font-size: 0.7rem;
+}
