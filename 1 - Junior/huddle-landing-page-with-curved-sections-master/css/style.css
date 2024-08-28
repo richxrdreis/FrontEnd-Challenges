@@ -258,8 +258,78 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom center;
+    color: var(--Very-Pale-Blue);
 
-
-    min-height: 400px;
     padding: 72px 100px;
+
+    font-family: var(--fonte-poppins);
 }
+
+footer .left .logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.3rem;
+
+    margin-bottom: 25px;
+}
+
+footer .left .logo img {
+    display: flex;
+    align-items: center;
+    width: 35px;
+}
+
+footer .left p {
+    margin-bottom: 20px;
+}
+
+footer .contato {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 60px;
+}
+
+footer .telefone img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .telefone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .telefone p {
+    align-items: center;
+}
+
+footer .email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .email p {
+    align-items: center;
+}
+
+
+footer .icones svg {
+    width: 40px;
+    height: 40px;
+}
+
+footer .icones svg:hover {
+    transition: 0.2s ease-in-out;
+    transform: scale(1.03);
+}
+
+/* 
+footer .left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} */
