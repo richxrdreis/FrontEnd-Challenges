@@ -47,3 +47,32 @@ form .flex {
     align-items: center;
     gap: 35px;
 }
+
+/* estilização global dos titulos */
+form .titulo {
+    color: var(--Grey-900-darker);
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+/* estilização global do span (*) */
+form span {
+    color: var(--Green-600-medium-);
+    font-weight: 600;
+}
+
+form .flex input {
+    width: 320px;
+    height: 50px;
+    border-radius: 9px;
+    border: 1px solid var(--Green-600-medium-);
+}
+
+form .flex .errorMsg {
+    margin-top: 10px;
+    color: var(--Red);
+}
+
+form .email {
+
+}
