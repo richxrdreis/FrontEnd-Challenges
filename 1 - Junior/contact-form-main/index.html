@@ -26,10 +26,10 @@
       <div class="email">
         <p class="titulo" >Email Address <span>*</span></p>
         <input type="email">
-        <p id="emailErorr" class="emailError">Please enter a valid email address</p>
+        <p id="emailError" class="errorMsg">Please enter a valid email address</p>
       </div>
       <div class="form-item">
-        <p class="titulo">QueryType <span>*</span></p>
+        <p class="titulo">Query Type <span>*</span></p>
 
         <div class="radio-inputs">
           <div class="radio-option">
@@ -51,8 +51,10 @@
         <p id="errorMsg" class="errorMsg">This field is required</p>
       </div>
       <div class="confirmar">
+        <div >
         <input type="checkbox" name="consent" id="consent">
         <label for="consent">I consent to being contacted by the team <span>*</span></label> 
+        </div>
         <p id="errorMsg" class="errorMsg">To submit this form, please consent to being contacted</p>
       </div>
       <button type="submit" class="submit-btn" id="submit-btn">Submit</button>
