@@ -45,7 +45,7 @@ body {
 form .flex {
     display: flex;
     align-items: center;
-    gap: 35px;
+    gap: 16px;
 }
 
 /* estilização global dos titulos */
@@ -59,6 +59,7 @@ form .titulo {
 form span {
     color: var(--Green-600-medium-);
     font-weight: 600;
+    margin-left: 3px;
 }
 
 form .flex input {
@@ -71,8 +72,51 @@ form .flex input {
 form .flex .errorMsg {
     margin-top: 10px;
     color: var(--Red);
+    margin-bottom: 20px;
 }
 
-form .email {
-
+form .email input {
+    width: 100%;
+    height: 50px;
+    border-radius: 9px;
+    border: 1px solid var(--Green-600-medium-);
 }
+
+form .emailError {
+    margin-top: 10px;
+    color: var(--Red);
+    margin-bottom: 20px;
+}
+
+form .radio-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+form .radio-container input {
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.errorMsg {
+    display: none;
+} */
