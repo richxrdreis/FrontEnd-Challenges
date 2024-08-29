@@ -3,7 +3,6 @@
 /* weights = 400 ou 700 */
 
 :root {
-    font-family: "Karla", sans-serif;
 
 --Green-200-lighter: #dff1e7;
 --Green-600-medium-: #0c7d69;
@@ -18,6 +17,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Karla", sans-serif;
 }
 
 body {
@@ -33,6 +33,7 @@ body {
     height: auto;
     padding: 20px 35px;
     background-color: var(--White);
+    border-radius: 11px;
 }
 
 .container h2 {
@@ -51,6 +52,7 @@ form .flex {
 /* estilização global dos titulos */
 form .titulo {
     color: var(--Grey-900-darker);
+    font-weight: 500;
     font-size: 0.9rem;
     margin-bottom: 8px;
 }
@@ -72,6 +74,7 @@ form .flex input {
 form .flex .errorMsg {
     margin-top: 10px;
     color: var(--Red);
+    font-size: 0.8rem;
     margin-bottom: 20px;
 }
 
@@ -86,6 +89,7 @@ form .emailError {
     margin-top: 10px;
     color: var(--Red);
     margin-bottom: 20px;
+    font-size: 0.8rem;
 }
 
 form .radio-flex {
@@ -97,22 +101,40 @@ form .radio-container input {
     background-color: red;
 }
 
+.form-item .titulo {
+    margin-bottom: 16px;
+}
 
+.radio-inputs {
+    display: flex;
+    gap: 16px;
+}
 
+.radio-option {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid var(--Green-600-medium-);
+    border-radius: 9px;
+    font-size: 1rem;
+    font-weight: 400;
 
+    width: 320px;
+    height: 50px;
+}
 
+.radio-option input {
+    font-family: "Karla", sans-serif;
+    color: var(--Grey-900-darker);
+    margin-left: 20px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.form-item .errorMsg {
+    margin-top: 16px;
+    color: var(--Red);
+    font-size: 0.8rem;
+}
 
 
 
