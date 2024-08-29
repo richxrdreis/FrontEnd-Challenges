@@ -26,19 +26,26 @@
       <div class="email">
         <p class="titulo" >Email Address <span>*</span></p>
         <input type="email">
-        <p id="errorMsg" class="errorMsg">This field is required</p>
         <p id="emailErorr" class="emailError">Please enter a valid email address</p>
       </div>
       <div class="radio-flex">
         <div class="radio-container">
-          <p class="titulo" >Query Type <span>*</span></p>
-          <input type="radio">
-          <label for="radio-1">General Enquiry</label>
-          <input type="radio">
-          <label for="radio-2">Support Request</label>
+          <label class="titulo">Query Type <span>*</span></label>
+          
+          <div class="radio-group">
+            <input type="radio" id="radio-1" name="query-type" value="general">
+            <label for="radio-1" class="radio-label">General Enquiry</label>
+          </div>
+      
+          <div class="radio-group">
+            <input type="radio" id="radio-2" name="query-type" value="support">
+            <label for="radio-2" class="radio-label">Support Request</label>
+          </div>
+      
           <p id="errorMsg" class="errorMsg">Please select a query type</p>
         </div>
       </div>
+      
       <div class="msg">
         <p class="titulo" >Message <span>*</span></p>
         <input type="text">
