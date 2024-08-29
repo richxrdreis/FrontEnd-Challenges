@@ -40,7 +40,7 @@ body {
     color: var(--Grey-900-darker);
     font-size: 1.6rem;
 
-    margin-bottom: 45px;
+    margin-bottom: 30px;
 }
 
 form .flex {
@@ -68,7 +68,7 @@ form .flex input {
     width: 320px;
     height: 50px;
     border-radius: 9px;
-    border: 1px solid var(--Green-600-medium-);
+    border: 1px solid var(--Grey-500-medium);
 }
 
 form .flex .errorMsg {
@@ -82,7 +82,7 @@ form .email input {
     width: 100%;
     height: 50px;
     border-radius: 9px;
-    border: 1px solid var(--Green-600-medium-);
+    border: 1px solid var(--Grey-500-medium);
 }
 
 form .emailError {
@@ -115,7 +115,7 @@ form .radio-container input {
     justify-content: left;
     align-items: center;
     gap: 5px;
-    border: 1px solid var(--Green-600-medium-);
+    border: 1px solid var(--Grey-500-medium);
     border-radius: 9px;
     font-size: 1rem;
     font-weight: 400;
@@ -136,7 +136,16 @@ form .radio-container input {
     font-size: 0.8rem;
 }
 
+.msg .titulo {
+    margin-top: 20px;
+}
 
+.msg textarea {
+    width: 100%;
+    height: 100px;
+    border-radius: 8px;
+    border: 1px solid var(--Grey-500-medium);
+}
 
 /* 
 .errorMsg {
