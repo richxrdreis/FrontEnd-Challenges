@@ -54,6 +54,7 @@ form .titulo {
     color: var(--Grey-900-darker);
     font-weight: 500;
     font-size: 0.9rem;
+    margin-top: 15px;
     margin-bottom: 8px;
 }
 
@@ -84,7 +85,7 @@ form .email input {
     height: 50px;
     border-radius: 9px;
     border: 1px solid var(--Grey-500-medium);
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 form .emailError {
@@ -208,6 +209,6 @@ textarea {
 
 /* mensagem de erro */
 
-/* .errorMsg {
+.errorMsg {
     display: none;
-} */
+}
