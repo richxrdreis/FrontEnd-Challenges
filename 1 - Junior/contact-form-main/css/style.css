@@ -74,6 +74,7 @@ form .flex input {
 form .flex .errorMsg {
     margin-top: 10px;
     color: var(--Red);
+    font-weight: 500;
     font-size: 0.8rem;
     margin-bottom: 20px;
 }
@@ -83,22 +84,15 @@ form .email input {
     height: 50px;
     border-radius: 9px;
     border: 1px solid var(--Grey-500-medium);
+    margin-bottom: 30px;
 }
 
 form .emailError {
     margin-top: 10px;
     color: var(--Red);
-    margin-bottom: 20px;
+    font-weight: 500;
     font-size: 0.8rem;
-}
-
-form .radio-flex {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-form .radio-container input {
-    background-color: red;
+    margin-bottom: 20px;
 }
 
 .form-item .titulo {
@@ -134,6 +128,7 @@ form .radio-container input {
     margin-top: 16px;
     color: var(--Red);
     font-size: 0.8rem;
+    font-weight: 500;
 }
 
 .msg .titulo {
@@ -145,9 +140,74 @@ form .radio-container input {
     height: 100px;
     border-radius: 8px;
     border: 1px solid var(--Grey-500-medium);
+    resize: none;
 }
 
-/* 
-.errorMsg {
+.msg .errorMsg {
+    margin-top: 5px;
+    color: var(--Red);
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.confirmar {
+    margin-top: 20px;
+    color: var(--Grey-900-darker);
+}
+
+.confirmar .errorMsg {
+    margin-top: 8px;
+    color: red;
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+button {
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 9px;
+    color: var(--White);
+    background-color: var(--Green-600-medium-);
+    font-size: 1.1rem;
+    font-weight: 400;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/* hover de todos os inputs */
+
+input[type="text"]:hover, input[type="email"]:hover, textarea:hover {
+    border-color: var(--Green-600-medium-);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+
+/* estilizando dentro dos inputs/textarea */
+
+input[type="text"], input[type="email"] {
+    padding-left: 20px;
+    font-size: 1rem;
+}
+
+textarea {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+/* mensagem de erro */
+
+/* .errorMsg {
     display: none;
 } */
