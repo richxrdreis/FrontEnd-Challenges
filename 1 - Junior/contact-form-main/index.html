@@ -13,24 +13,23 @@
     <form>
       <div class="flex">
         <div class="left">
-        <p class="titulo" >First Name <span>*</span></p>
-        <input type="text">
-        <p id="errorMsg" class="errorMsg">This field is required</p>
+          <p class="titulo">First Name <span>*</span></p>
+          <input type="text">
+          <p id="errorMsg-first-name" class="errorMsg">This field is required</p>
         </div>
         <div class="right">
-        <p class="titulo" >Last Name <span>*</span></p>
-        <input type="text">
-        <p id="errorMsg" class="errorMsg">This field is required</p>
+          <p class="titulo">Last Name <span>*</span></p>
+          <input type="text">
+          <p id="errorMsg-last-name" class="errorMsg">This field is required</p>
         </div>
       </div>
       <div class="email">
-        <p class="titulo" >Email Address <span>*</span></p>
+        <p class="titulo">Email Address <span>*</span></p>
         <input type="email">
         <p id="emailError" class="errorMsg">Please enter a valid email address</p>
       </div>
       <div class="form-item">
         <p class="titulo">Query Type <span>*</span></p>
-
         <div class="radio-inputs">
           <div class="radio-option">
             <input type="radio" name="query-type" id="general-enquiry" value="General Enquiry">
@@ -41,21 +40,19 @@
             <label for="support-request">Support Request</label>
           </div>
         </div>
-
-        <p id="errorMsg" class="errorMsg">Please select a query type</p>
+        <p id="errorMsg-query-type" class="errorMsg">Please select a query type</p>
       </div>
-      
       <div class="msg">
-        <p class="titulo" >Message <span>*</span></p>
+        <p class="titulo">Message <span>*</span></p>
         <textarea name="message" id="message" rows="4"></textarea>
-        <p id="errorMsg" class="errorMsg">This field is required</p>
+        <p id="errorMsg-message" class="errorMsg">This field is required</p>
       </div>
       <div class="confirmar">
-        <div >
-        <input type="checkbox" name="consent" id="consent">
-        <label for="consent">I consent to being contacted by the team <span>*</span></label> 
+        <div>
+          <input type="checkbox" name="consent" id="consent">
+          <label for="consent">I consent to being contacted by the team <span>*</span></label> 
         </div>
-        <p id="errorMsg" class="errorMsg">To submit this form, please consent to being contacted</p>
+        <p id="errorMsg-consent" class="errorMsg">To submit this form, please consent to being contacted</p>
       </div>
       <button type="submit" class="submit-btn" id="submit-btn">Submit</button>
     </form>
@@ -66,7 +63,6 @@
       <img src="assets/images/icon-checkbox-check.svg" alt="">
       Message Sent!
     </div>
-
     <p>Thanks for completing the form. We'll be in touch soon!</p>
   </div>
    -->
