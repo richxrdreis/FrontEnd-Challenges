@@ -34,6 +34,8 @@ body {
     padding: 20px 35px;
     background-color: var(--White);
     border-radius: 11px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .container h2 {
@@ -46,7 +48,8 @@ body {
 form .flex {
     display: flex;
     align-items: center;
-    gap: 16px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /* estilização global dos titulos */
@@ -144,6 +147,14 @@ form .emailError {
     resize: none;
 }
 
+#emailError {
+    margin-top: 5px;
+    color: var(--Red);
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
 .msg .errorMsg {
     margin-top: 5px;
     color: var(--Red);
@@ -215,3 +226,33 @@ textarea {
 .errorMsg {
     display: none;
 }
+
+.input-error {
+    border: 1px solid var(--Red);
+}
+
+/* responsividade */
+
+/* ... seu CSS existente ... */
+
+@media (max-width: 768px) {
+    .container {
+      max-width: 90%;
+    }
+  
+    .flex {
+      flex-direction: column;
+    }
+  
+    .flex input, .email input, .msg textarea {
+      width: 100%;
+    }
+  
+    .radio-inputs {
+      flex-direction: column;
+    }
+  
+    .radio-option {
+      width: 100%;
+    }
+  }
