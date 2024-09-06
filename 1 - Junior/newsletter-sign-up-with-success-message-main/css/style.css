@@ -149,6 +149,44 @@ button:hover {
 
 /* após clicar no confirmar, tela que aparecerá: */
 
+.confirmed-message {
+    display: none;
+    line-height: 1.2;
+}
+
+.confirmed-message.active {
+    display: block;
+}
+
+.confirmed-message img {
+    width: 80px;
+}
+
+.confirmed-message h2 {
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+.confirmed-message p {
+    margin: 2rem 0;
+}
+
+.confirmed-message button {
+    cursor: pointer;
+    background-color: var(--Dark-Slate-Grey);
+    color: var(--White);
+    font-weight: 700;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.confirmed-message button:hover {
+    background: linear-gradient(127deg, rgb(255, 63, 124, 1) 40%, rgba(255, 154, 34, 1) 70%);
+}
+
 /* CLASSES PARA SEREM MOSTRADAS NO JS */
 
 .email .flex .email-error {
