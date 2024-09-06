@@ -177,6 +177,7 @@ button:hover {
     .container {
         flex-direction: column-reverse;
         align-items: center;
+        justify-content: center;
     }
 
     .left {
@@ -190,7 +191,7 @@ button:hover {
 
     .left p {
         font-size: 1rem;
-        width: 305px;
+        max-width: 305px;
     }
 
     .email input {
