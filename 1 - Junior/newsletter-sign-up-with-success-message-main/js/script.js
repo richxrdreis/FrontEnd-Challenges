@@ -1,5 +1,5 @@
 document.getElementById('btn-submit').addEventListener('click', function(e) {
-    event.preventDefault();
+    e.preventDefault();
 
 const emailInput = document.getElementById('input-error');
 const errorElement = document.getElementById('email-error')
