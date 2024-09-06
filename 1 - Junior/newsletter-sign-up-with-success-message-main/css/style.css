@@ -56,6 +56,8 @@ body {
     color: var(--Dark-Slate-Grey);
     font-weight: 400;
     margin-bottom: 30px;
+    max-width: 360px;
+    line-height: 1.5rem;
 }
 
 /* (início) removendo a margin da lista, para não haver interferência. */
@@ -130,7 +132,7 @@ body {
 }
 
 button:hover {
-background: linear-gradient(to right, #FF5478, #FF6742);
+    background: linear-gradient(to right, #FF5478, #FF6742);
 }
 
 .right {
@@ -182,26 +184,27 @@ background: linear-gradient(to right, #FF5478, #FF6742);
     }
 
     .left h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         margin-bottom: 20px;
     }
 
     .left p {
         font-size: 1rem;
+        width: 305px;
     }
 
     .email input {
-        height: 45px;
+        height: 60px;
     }
 
     .btn button {
-        height: 45px;
+        height: 60px;
     }
 
     .right {
         background-image: url(../assets/images/illustration-sign-up-mobile.svg);
         background-size: cover;
-        border-radius: 0 0 40px 40px;
+        border-radius: 0 0 16px 16px;
         width: 100%;
         height: 284px;
     }
