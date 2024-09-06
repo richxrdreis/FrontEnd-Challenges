@@ -47,20 +47,64 @@ body {
 
 .left h1 {
     color: var(--Dark-Slate-Grey);
+    font-weight: 700;
     font-size: 3rem;
     margin-bottom: 30px;
 }
 
-.left .lista {
-    display: flex;
-    flex-direction: column;
-}
-
 .left p {
     color: var(--Dark-Slate-Grey);
+    font-weight: 400;
+    margin-bottom: 30px;
 }
 
+/* (início) removendo a margin da lista, para não haver interferência. */
+.left ul p {
+    margin: 0;
+}
+/* (fim) */
+
+.left .lista li {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
 
 .left ul {
     list-style-type: none;
+}
+
+.email {
+    margin-top: 45px;
+}
+
+.email .flex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.email .flex p {
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.email .flex .emailConfirm {
+    color: var(--Tomato);
+    font-size: 0.7rem;
+
+    display: none;
+    /* mostrar com js */
+}
+
+.email input {
+    width: 100%;
+    height: 55px;
+    border-radius: 8px;
+    border: 1px solid var(--Grey);
+    padding-inline: 25px;
+}
+
+.email input::placeholder {
+    color: var(--Dark-Slate-Grey);
 }
