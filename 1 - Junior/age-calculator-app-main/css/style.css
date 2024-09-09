@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    border: none;
 }
 
 /* FS 32px */
@@ -17,4 +18,93 @@
 --Light-grey: #dbdbdb;
 --Smokey-grey: #716f6f;
 --Off-black: #141414;
+}
+
+body {
+    background-color: var(--Light-grey);
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    min-width: 845px;
+    height: 650px;
+    background-color: var(--White);
+    border-radius: 27px 27px 212px 27px ;
+    padding: 55px 50px;
+}
+
+.cardTop {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.item input {
+    width: 160px;
+    height: 60px;
+    border-radius: 4px;
+    border: 1px solid var(--Light-grey);
+    padding-inline: 20px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.item input::placeholder {
+    color: var(--Smokey-grey);
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.item .subtitle {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--Smokey-grey);
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-bottom: 6px;
+}
+
+hr {
+    border: 0.1px solid var(--Light-grey);
+    width: 700px;
+}
+
+.cardMid {
+    bottom: 20px;
+    position: relative;
+}
+
+.cardMid img {
+    position: absolute;
+    background-color: var(--Purple);
+    padding: 25px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    top: 0%;
+    left: 100%;
+    transform: translate(-90%, -30%);
+    cursor: pointer;
+}
+
+.cardMid img:hover {
+    background-color: var(--Off-black);
+}
+
+.cardBottom {
+    font-size: 2.7rem;
+}
+
+.cardBottom span {
+    color: var(--Purple);
+    margin-right: 20px;
+}
+
+.title {
+    font-style: italic;
+    font-weight: 800;
 }
