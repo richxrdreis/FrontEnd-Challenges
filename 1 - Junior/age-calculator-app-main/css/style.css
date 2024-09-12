@@ -51,12 +51,26 @@ body {
     padding-inline: 20px;
     align-items: center;
     margin-bottom: 40px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Remove setinhas no Chrome, Safari, Edge e Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .item input::placeholder {
     color: var(--Smokey-grey);
     font-weight: 700;
-    font-size: 1.8rem;
+    font-size: 2rem;
+}
+
+.item input:focus {
+    cursor: pointer;
+    border: 1px solid var(--Purple);
 }
 
 .item .subtitle {
