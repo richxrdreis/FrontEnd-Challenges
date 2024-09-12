@@ -1,0 +1,25 @@
+/* Headings, Call-to-actions, Header Navigation */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Raleway", sans-serif; */
+/* Weights: 400, 700 */
+
+
+/* Body */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* font-family: "Open Sans", sans-serif; */
+/* Weights: 400 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+--Very-Dark-Blue: #070439;
+--Desaturated-Blue: #585989;
+--Bright-Blue: #3065f8;
+--Moderate-Cyan: #3c9f8f;
+--Light-Grayish-Blue: #f6f6fe;
+--Light-Gray: #bfbfbf;
+}
