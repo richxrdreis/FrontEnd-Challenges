@@ -13,6 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: none;
 }
 
 :root {
@@ -22,4 +23,88 @@
 --Moderate-Cyan: #3c9f8f;
 --Light-Grayish-Blue: #f6f6fe;
 --Light-Gray: #bfbfbf;
+}
+
+header {
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px 60px;
+}
+
+header img {
+    height: 40px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    color: var(--Desaturated-Blue);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 140px;
+
+    cursor: default;
+}
+
+main {
+    font-family: "Open Sans", sans-serif;
+    padding: 0px 60px;
+}
+
+.left h1 {
+    color: var(--Very-Dark-Blue);
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    margin-bottom: 30px;
+}
+
+.subtitle {
+    color: var(--Very-Dark-Blue);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+} 
+
+.acesso input {
+    width: 325px;
+    height: 45px;
+    border-radius: 2px;
+    border: 1px solid var(--Desaturated-Blue);
+    color: var(--Desaturated-Blue);
+    padding-inline: 20px;
+}
+
+.acesso input::placeholder {
+    font-family: "Open Sans";
+}
+
+.border-error {
+    border: 1px solid red;
+}
+
+.acesso .error-msg {
+    display: none;
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: red;
+}
+
+
+
+
+
+
+.right img {
+    margin-left: 270px;
+    width: 70%;
 }
