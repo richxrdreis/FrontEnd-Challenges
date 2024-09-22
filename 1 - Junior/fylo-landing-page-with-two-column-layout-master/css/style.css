@@ -57,23 +57,37 @@ main {
 .left h1 {
     color: var(--Very-Dark-Blue);
     font-weight: 700;
-    font-size: 1.8rem;
-    line-height: 2.7rem;
-    margin-bottom: 30px;
+    font-size: 2.8rem;
+    line-height: 3.8rem;
+    margin-bottom: 20px;
 }
 
 .subtitle {
     color: var(--Very-Dark-Blue);
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
     margin-bottom: 20px;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 } 
+
+.left {
+    width: 50%;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.right img {
+    width: 80%;
+}
 
 .acesso input {
     width: 325px;
@@ -116,11 +130,6 @@ button:hover {
     margin-top: 5px;
     font-size: 0.8rem;
     color: red;
-}
-
-.right img {
-    margin-left: 270px;
-    width: 70%;
 }
 
 /* espaçamento embaixo (primeiro section)*/
