@@ -1,198 +1,302 @@
 /* Headings, Call-to-actions, Header Navigation */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 /* font-family: "Raleway", sans-serif; */
 /* Weights: 400, 700 */
 
-
 /* Body */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 /* font-family: "Open Sans", sans-serif; */
 /* Weights: 400 */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
 }
 
 :root {
---Very-Dark-Blue: #070439;
---Desaturated-Blue: #585989;
---Bright-Blue: #3065f8;
---Moderate-Cyan: #3c9f8f;
---Light-Grayish-Blue: #f6f6fe;
---Light-Gray: #bfbfbf;
+  --Very-Dark-Blue: #070439;
+  --Desaturated-Blue: #585989;
+  --Bright-Blue: #3065f8;
+  --Moderate-Cyan: #3c9f8f;
+  --Light-Grayish-Blue: #f6f6fe;
+  --Light-Gray: #bfbfbf;
 }
 
 header {
-    font-family: "Raleway", sans-serif;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 40px 60px;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 40px 60px;
 }
 
 header img {
-    height: 40px;
+  height: 40px;
 }
 
 header nav {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    color: var(--Desaturated-Blue);
-    font-size: 0.9rem;
-    font-weight: 500;
-    margin-bottom: 140px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  color: var(--Desaturated-Blue);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 140px;
 
-    cursor: default;
+  cursor: default;
 }
 
 main {
-    font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .left h1 {
-    color: var(--Very-Dark-Blue);
-    font-weight: 700;
-    font-size: 2.8rem;
-    line-height: 3.8rem;
-    margin-bottom: 20px;
+  color: var(--Very-Dark-Blue);
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 3.8rem;
+  margin-bottom: 20px;
 }
 
 .subtitle {
-    color: var(--Very-Dark-Blue);
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 20px;
+  color: var(--Very-Dark-Blue);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .container {
-    padding: 0px 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} 
+  padding: 0px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .left {
-    width: 50%;
+  width: 50%;
 }
 
 .right {
-    width: 50%;
-    display: flex;
-    justify-content: center;
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
 
 .right img {
-    width: 80%;
+  width: 80%;
 }
 
 .acesso input {
-    width: 325px;
-    height: 45px;
-    border-radius: 2px;
-    border: 1px solid var(--Desaturated-Blue);
-    color: var(--Desaturated-Blue);
-    padding-inline: 20px;
-    margin-right: 12px;
+  width: 325px;
+  height: 45px;
+  border-radius: 2px;
+  border: 1px solid var(--Desaturated-Blue);
+  color: var(--Desaturated-Blue);
+  padding-inline: 20px;
+  margin-right: 12px;
 }
 
 .acesso input::placeholder {
-    font-family: "Open Sans";
-    font-size: 0.9rem;
-    color: var(--Light-Gray);
+  font-family: "Open Sans";
+  font-size: 0.9rem;
+  color: var(--Light-Gray);
 }
 
 /* todos os botões estilizados como uma classe geral! */
 button {
-    background-color: var(--Bright-Blue);
-    width: 190px;
-    height: 45px;
-    border-radius: 2px;
-    color: var(--Light-Grayish-Blue);
-    font-weight: 700;
+  background-color: var(--Bright-Blue);
+  width: 190px;
+  height: 45px;
+  border-radius: 2px;
+  color: var(--Light-Grayish-Blue);
+  font-weight: 700;
 
-    cursor: pointer;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: rgb(48, 101, 248, 0.8);
+  background-color: rgb(48, 101, 248, 0.8);
 }
 
 .border-error {
-    border: 1px solid red;
+  border: 1px solid red;
 }
 
 .acesso .error-msg {
-    display: none;
-    margin-top: 5px;
-    font-size: 0.8rem;
-    color: red;
+  display: none;
+  margin-top: 5px;
+  font-size: 0.8rem;
+  color: red;
 }
 
 /* section do meio (onde tem o card) */
 
 .card {
-    background-image: url(../images/bg-curve-desktop.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center top;
-    padding: 0px 60px;
+  background-image: url(../images/bg-curve-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding: 0px 60px;
+  margin-bottom: 11rem;
 
-    margin-top: 20rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  margin-top: 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .texts h1 {
-    font-size: 2rem;
-    color: var(--Very-Dark-Blue);
-    margin-bottom: 40px;
+  font-size: 2rem;
+  color: var(--Very-Dark-Blue);
+  margin-bottom: 40px;
 }
 
 .subtitle-one {
-    color: var(--Very-Dark-Blue);
-    font-weight: 600;
-    line-height: 1.5rem;
-    margin-bottom: 20px;
+  color: var(--Very-Dark-Blue);
+  font-weight: 600;
+  line-height: 1.5rem;
+  margin-bottom: 20px;
 }
 
 .subtitle-two {
-    color: var(--Very-Dark-Blue);
-    font-weight: 600;
-    line-height: 1.5rem;
-    margin-bottom: 23px;
+  color: var(--Very-Dark-Blue);
+  font-weight: 600;
+  line-height: 1.5rem;
+  margin-bottom: 23px;
 }
 
 .seeHow {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .seeHow a {
-    text-decoration: none;
-    color: var(--Moderate-Cyan);
-    display: flex;
-    align-items: center;
-    gap: 5px;
+  text-decoration: none;
+  color: var(--Moderate-Cyan);
+  display: flex;
+  align-items: center;
+  gap: 5px;
 
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .seeHow a:hover {
-    text-underline-offset: 5px;
-    text-decoration: underline;
-    text-decoration-color: var(--Moderate-Cyan);
+  text-underline-offset: 5px;
+  text-decoration: underline;
+  text-decoration-color: var(--Moderate-Cyan);
 }
 
 .depoimento {
-    width: 360px;
-    height: 220px;
-    background-color: white;
-    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.062);
-    border-radius: 6px;
-    padding: 30px;
+  width: 400px;
+  height: 250px;
+  background-color: white;
+  box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.062);
+  border-radius: 6px;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.depoimento img {
+  margin-bottom: 15px;
+}
+
+.depoimento p {
+  color: var(--Very-Dark-Blue);
+  font-weight: 500;
+  line-height: 1.6rem;
+
+  margin-bottom: 20px;
+}
+
+.flex-img {
+  display: flex;
+}
+
+.flex-img img {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+
+  margin-right: 10px;
+}
+
+.flex-img span {
+  color: var(--Very-Dark-Blue);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.flex-img p {
+  color: var(--Very-Dark-Blue);
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.flex-img div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sub-footer {
+  padding: 110px 60px;
+  background-color: var(--Desaturated-Blue);
+  color: var(--Light-Grayish-Blue);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.text h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.text p {
+  width: 460px;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.right input {
+  width: 480px;
+  height: 50px;
+  border-radius: 4px;
+  padding-inline: 18px;
+  color: var(--Very-Dark-Blue);
+  margin-bottom: 16px;
+}
+
+.right .error-msg {
+  display: none;
+  font-size: 0.8rem;
+  margin-bottom: 16px;
+}
+
+footer {
+  background-color: var(--Very-Dark-Blue);
+  padding: 90px 60px;
+  color: var(--Light-Grayish-Blue);
+}
+
+footer .top img {
+  margin-bottom: 40px;
+}
+
+footer .fale-conosco {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .fale-conosco img {
+  width: 20px;
 }
