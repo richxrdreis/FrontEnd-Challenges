@@ -51,7 +51,6 @@ header nav {
 
 main {
     font-family: "Open Sans", sans-serif;
-    padding: 0px 60px;
 }
 
 .left h1 {
@@ -70,6 +69,7 @@ main {
 }
 
 .container {
+    padding: 0px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -132,19 +132,67 @@ button:hover {
     color: red;
 }
 
-/* espaçamento embaixo (primeiro section)*/
-.container {
-    margin-bottom: 11rem;
-}
-
 /* section do meio (onde tem o card) */
 
 .card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    background-image: url(../images/bg-curve-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding: 0px 60px;
+
+    margin-top: 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.left {
+.texts h1 {
+    font-size: 2rem;
+    color: var(--Very-Dark-Blue);
+    margin-bottom: 40px;
+}
+
+.subtitle-one {
+    color: var(--Very-Dark-Blue);
+    font-weight: 600;
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.subtitle-two {
+    color: var(--Very-Dark-Blue);
+    font-weight: 600;
+    line-height: 1.5rem;
+    margin-bottom: 23px;
+}
+
+.seeHow {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+}
+
+.seeHow a {
+    text-decoration: none;
+    color: var(--Moderate-Cyan);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    margin-bottom: 40px;
+}
+
+.seeHow a:hover {
+    text-underline-offset: 5px;
+    text-decoration: underline;
+    text-decoration-color: var(--Moderate-Cyan);
+}
+
+.depoimento {
+    width: 360px;
+    height: 220px;
+    background-color: white;
+    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.062);
+    border-radius: 6px;
+    padding: 30px;
 }
